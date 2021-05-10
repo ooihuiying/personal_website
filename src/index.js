@@ -15,6 +15,7 @@ import FullArticlePage from './pages/FullArticlePage/FullArticlePage';
 require("dotenv").config({ path: __dirname + "/.env" });
 
 console.log("OVER HERE")
+console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
   <BrowserRouter>
     <ErrorHandler>
