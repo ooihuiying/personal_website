@@ -50,7 +50,7 @@ const WelcomePage = ({ location: { pathname } } = {}) => {
     };
 
     history.push({
-      pathname: '/full_article',
+      pathname: process.env.PUBLIC_URL + '/full_article',
       state: { post: query }
     });
   };
