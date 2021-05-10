@@ -14,13 +14,14 @@ import ChineseCulturePage from './pages/ChineseCulturePage/ChineseCulturePage';
 import FullArticlePage from './pages/FullArticlePage/FullArticlePage';
 require("dotenv").config({ path: __dirname + "/.env" });
 
-console.log("OVER HERE")
+console.log("Welcome Page")
 console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
   <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
     <ErrorHandler>
       <Switch>
-        <Route exact path="/" component={WelcomePage} />
+        <Route component={WelcomePage} />
+        {/* <Route exact path="/" component={WelcomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/tech-world" component={TechWorldPage} />
         <Route exact path="/book-reviews" component={BookReviewsPage} />
@@ -28,7 +29,7 @@ ReactDOM.render(
         <Route exact path="/globe_trotting" component={GlobeTrottingPage} />
         <Route exact path="/quotes" component={QuotesPage} />
         <Route exact path="/reflections" component={ReflectionsPage} />
-        <Route exact path="/full_article" component={FullArticlePage} />
+        <Route exact path="/full_article" component={FullArticlePage} /> */}
         <Route path="*" component={Error404} />
       </Switch>
     </ErrorHandler>
