@@ -17,7 +17,7 @@ export const DetailCard = ({
     };
 
     history.push({
-      pathname: process.env.PUBLIC_URL + '/full_article',
+      pathname: '/full_article',
       state: { post: query }
     });
   }
