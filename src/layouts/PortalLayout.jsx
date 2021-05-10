@@ -10,13 +10,10 @@ const PortalLayout = ({ children, pathname }) => {
     <PortalLayoutStyled>
       <div className="layout--main">
         <div className="layout--navbar">
-          <div className="navbar--title">
-            <NavTitle putColour>Hui Ying</NavTitle>
+          <div className="navbar--title" >
+            <NavTitle putColour selected={pathname === '/'} to="/">Hui Ying</NavTitle>
           </div>
           <div className="navbar--item">
-            <NavItem selected={pathname === '/'} to="/">
-              <FaHome />
-            </NavItem>
             <NavItem selected={pathname === '/about'} to="/about">
               About Me
             </NavItem>

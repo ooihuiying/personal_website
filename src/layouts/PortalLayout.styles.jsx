@@ -3,44 +3,32 @@ import styled from 'styled-components';
 import theme from '../config/theme';
 
 export const PortalLayoutStyled = styled('div')`
-  display: flex;
   height: 100%;
   width: 100%;
 
   .layout--main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
 
     .layout--navbar {
       padding-top: 50px;
       padding-bottom: 50px;
-      display: flex;
-      flex-direction: row;
+      padding-right: 50px;
+      padding-left: 50px;
       width: 100%;
       height: 10%;
       align-items: center;
       position: fixed;
       z-index: 9999;
       background-color: ${theme.colours.white};
+      display: flex;
+      justify-content: space-between;
 
       .navbar--item {
         display: inline-flex;
         justify-content: space-between;
-        //edit here to adjust the nav-item
-        @media only screen and (max-width: ${theme.breakpoint.widescreen}) {
-          padding-left: 700px;
-        }
-        @media only screen and (max-width: ${theme.breakpoint.desktop}) {
-          padding-left: 450px;
-        }
-        @media only screen and (max-width: ${theme.breakpoint.tablet}) {
-          padding-left: 350x;
-        }
-        @media only screen and (max-width: ${theme.breakpoint.mobile}) {
-          padding-left: 10px;
-        }
       }
 
       .navbar--title {
@@ -49,7 +37,6 @@ export const PortalLayoutStyled = styled('div')`
         flex-direction: row;
         align-items: center;
         height: 30px;
-        padding-left: 80px;
       }
     }
 
@@ -74,8 +61,9 @@ export const NavItem = styled(Link)`
   }
 `;
 
-export const NavTitle = styled.h1`
+export const NavTitle = styled(Link)`
   font-size: 40px;
+  font-weight: bold;
   color: ${({ putColour } = {}) =>
     putColour ? theme.colours.maroon : theme.colours.black};
 `;

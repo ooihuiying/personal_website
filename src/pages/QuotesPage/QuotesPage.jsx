@@ -29,7 +29,7 @@ const Quotes = () => {
 
   return (
     <PortalLayout pathname="/quotes">
-      <div style={style.main}>
+      <div >
         {loading && data.length === 0 ? (
           <div>
             <div className="row" style={style.card}>
@@ -46,17 +46,17 @@ const Quotes = () => {
             <h1 style={style.text}>{"No Post Yet!"}</h1>
           </div>
         ) : (
-              <div>
-                <img style={style.image} class="ui centered massive image" src={mindful}></img>
-                <div className="row" style={style.card}>
-                  <Card.Group centered >
-                    {data.map((result, index) => (
-                      <QuoteCard post={result} color={colorArray[index % (colorArray.length)]} />
-                    ))}
-                  </Card.Group>
-                </div>
-              </div>
-            )}
+          <div>
+            <img style={style.image} class="ui centered massive image" src={mindful}></img>
+            <div className="row" style={style.card}>
+              <Card.Group centered >
+                {data.map((result, index) => (
+                  <QuoteCard post={result} color={colorArray[index % (colorArray.length)]} />
+                ))}
+              </Card.Group>
+            </div>
+          </div>
+        )}
       </div>
     </PortalLayout>
   );

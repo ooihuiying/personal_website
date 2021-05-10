@@ -5,8 +5,6 @@ import { AboutHeader, AboutText, HighlightText } from './AboutPage.styles';
 import imagegirl from '../../images/imagegirl.jpg';
 
 const AboutPage = ({ location: { pathname } = {} } = {}) => {
-  console.log("ABOUT PAGE")
-  console.log(pathname)
   return (
     <PortalLayout pathname={pathname}>
       <Grid container columns={1}>
