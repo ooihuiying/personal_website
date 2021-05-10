@@ -17,7 +17,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 console.log("Welcome Page")
 console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
-  <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
+  <BrowserRouter>
     <ErrorHandler>
       <Switch>
         <Route component={WelcomePage} />
