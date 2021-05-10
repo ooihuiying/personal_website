@@ -17,11 +17,10 @@ require("dotenv").config({ path: __dirname + "/.env" });
 console.log("Welcome Page")
 console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
-  <HashRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter>
     <ErrorHandler>
       <Switch>
-        <Route exact path="/" component={WelcomePage} />
-        <Route exact path="/about" component={AboutPage} />
+        <Route component={WelcomePage} />
         {/* <Route exact path="/" component={WelcomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/tech-world" component={TechWorldPage} />
