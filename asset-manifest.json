@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.js": "https://ooihuiying.github.io/personal_website/static/js/main.e28112ff.chunk.js",
-    "main.js.map": "https://ooihuiying.github.io/personal_website/static/js/main.e28112ff.chunk.js.map",
-    "runtime-main.js": "https://ooihuiying.github.io/personal_website/static/js/runtime-main.c4830eb2.js",
-    "runtime-main.js.map": "https://ooihuiying.github.io/personal_website/static/js/runtime-main.c4830eb2.js.map",
-    "static/js/2.34b8698a.chunk.js": "https://ooihuiying.github.io/personal_website/static/js/2.34b8698a.chunk.js",
-    "static/js/2.34b8698a.chunk.js.map": "https://ooihuiying.github.io/personal_website/static/js/2.34b8698a.chunk.js.map",
-    "index.html": "https://ooihuiying.github.io/personal_website/index.html",
-    "precache-manifest.534f71ab2c5d4f651ae4d3d00bdd190d.js": "https://ooihuiying.github.io/personal_website/precache-manifest.534f71ab2c5d4f651ae4d3d00bdd190d.js",
-    "service-worker.js": "https://ooihuiying.github.io/personal_website/service-worker.js",
-    "static/js/2.34b8698a.chunk.js.LICENSE.txt": "https://ooihuiying.github.io/personal_website/static/js/2.34b8698a.chunk.js.LICENSE.txt",
-    "static/media/ComputerScienceGirl.jpg": "https://ooihuiying.github.io/personal_website/static/media/ComputerScienceGirl.2f37a260.jpg",
-    "static/media/chinesepainting.jpg": "https://ooihuiying.github.io/personal_website/static/media/chinesepainting.7ab22726.jpg",
-    "static/media/hongkong.jpg": "https://ooihuiying.github.io/personal_website/static/media/hongkong.9044d6dd.jpg",
-    "static/media/imagegirl.jpg": "https://ooihuiying.github.io/personal_website/static/media/imagegirl.b6c30208.jpg",
-    "static/media/main.svg": "https://ooihuiying.github.io/personal_website/static/media/main.59fe56c9.svg",
-    "static/media/mindful.png": "https://ooihuiying.github.io/personal_website/static/media/mindful.4f0626cd.png",
-    "static/media/self.png": "https://ooihuiying.github.io/personal_website/static/media/self.57b6b572.png",
-    "static/media/templeofheaven.jpg": "https://ooihuiying.github.io/personal_website/static/media/templeofheaven.0da538fe.jpg"
+    "main.js": "personal_website/static/js/main.22584071.chunk.js",
+    "main.js.map": "personal_website/static/js/main.22584071.chunk.js.map",
+    "runtime-main.js": "personal_website/static/js/runtime-main.8f0179e9.js",
+    "runtime-main.js.map": "personal_website/static/js/runtime-main.8f0179e9.js.map",
+    "static/js/2.9543f24c.chunk.js": "personal_website/static/js/2.9543f24c.chunk.js",
+    "static/js/2.9543f24c.chunk.js.map": "personal_website/static/js/2.9543f24c.chunk.js.map",
+    "index.html": "personal_website/index.html",
+    "precache-manifest.a092adec434fa7b0dd5d7c4f3631bb1b.js": "personal_website/precache-manifest.a092adec434fa7b0dd5d7c4f3631bb1b.js",
+    "service-worker.js": "personal_website/service-worker.js",
+    "static/js/2.9543f24c.chunk.js.LICENSE.txt": "personal_website/static/js/2.9543f24c.chunk.js.LICENSE.txt",
+    "static/media/ComputerScienceGirl.jpg": "personal_website/static/media/ComputerScienceGirl.2f37a260.jpg",
+    "static/media/chinesepainting.jpg": "personal_website/static/media/chinesepainting.7ab22726.jpg",
+    "static/media/hongkong.jpg": "personal_website/static/media/hongkong.9044d6dd.jpg",
+    "static/media/imagegirl.jpg": "personal_website/static/media/imagegirl.b6c30208.jpg",
+    "static/media/main.svg": "personal_website/static/media/main.59fe56c9.svg",
+    "static/media/mindful.png": "personal_website/static/media/mindful.4f0626cd.png",
+    "static/media/self.png": "personal_website/static/media/self.57b6b572.png",
+    "static/media/templeofheaven.jpg": "personal_website/static/media/templeofheaven.0da538fe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c4830eb2.js",
-    "static/js/2.34b8698a.chunk.js",
-    "static/js/main.e28112ff.chunk.js"
+    "static/js/runtime-main.8f0179e9.js",
+    "static/js/2.9543f24c.chunk.js",
+    "static/js/main.22584071.chunk.js"
   ]
 }
