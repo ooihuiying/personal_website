@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import WelcomePage from './pages/WelcomePage/WelcomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import QuotesPage from './pages/QuotesPage/QuotesPage';
@@ -17,10 +17,11 @@ require("dotenv").config({ path: __dirname + "/.env" });
 console.log("Welcome Page")
 console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter >
     <ErrorHandler>
       <Switch>
-        <Route component={WelcomePage} />
+        <Route exact path="/" component={WelcomePage} />
+        <Route exact path="/about" component={AboutPage} />
         {/* <Route exact path="/" component={WelcomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/tech-world" component={TechWorldPage} />
@@ -33,7 +34,7 @@ ReactDOM.render(
         <Route path="*" component={Error404} />
       </Switch>
     </ErrorHandler>
-  </BrowserRouter>,
+  </HashRouter>,
   // <h1>TESTING ONE TWO</h1>,
   document.getElementById('root')
 );
