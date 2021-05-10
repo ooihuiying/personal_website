@@ -20,7 +20,7 @@ ReactDOM.render(
   <HashRouter>
     <ErrorHandler>
       <Switch>
-        <Route component={WelcomePage} />
+        <Route path="/" component={WelcomePage} />
         {/* <Route exact path="/" component={WelcomePage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/tech-world" component={TechWorldPage} />
