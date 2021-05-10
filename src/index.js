@@ -14,8 +14,7 @@ import ChineseCulturePage from './pages/ChineseCulturePage/ChineseCulturePage';
 import FullArticlePage from './pages/FullArticlePage/FullArticlePage';
 require("dotenv").config({ path: __dirname + "/.env" });
 
-console.log("Welcome Page")
-console.log(process.env.PUBLIC_URL)
+// Important to only use Hashrouter. Cannot use Browserrouter for github page.
 ReactDOM.render(
   <HashRouter >
     <ErrorHandler>
@@ -34,7 +33,6 @@ ReactDOM.render(
       </Switch>
     </ErrorHandler>
   </HashRouter>,
-  // <h1>TESTING ONE TWO</h1>,
   document.getElementById('root')
 );
 
