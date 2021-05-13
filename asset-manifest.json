@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/personal_website/static/js/main.f4ba8ccd.chunk.js",
-    "main.js.map": "/personal_website/static/js/main.f4ba8ccd.chunk.js.map",
+    "main.js": "/personal_website/static/js/main.79c5f23f.chunk.js",
+    "main.js.map": "/personal_website/static/js/main.79c5f23f.chunk.js.map",
     "runtime-main.js": "/personal_website/static/js/runtime-main.684a33f3.js",
     "runtime-main.js.map": "/personal_website/static/js/runtime-main.684a33f3.js.map",
-    "static/js/2.b772b7a6.chunk.js": "/personal_website/static/js/2.b772b7a6.chunk.js",
-    "static/js/2.b772b7a6.chunk.js.map": "/personal_website/static/js/2.b772b7a6.chunk.js.map",
+    "static/js/2.261ec1bb.chunk.js": "/personal_website/static/js/2.261ec1bb.chunk.js",
+    "static/js/2.261ec1bb.chunk.js.map": "/personal_website/static/js/2.261ec1bb.chunk.js.map",
     "index.html": "/personal_website/index.html",
-    "precache-manifest.bf47df2b1173555edf2fe272562255e5.js": "/personal_website/precache-manifest.bf47df2b1173555edf2fe272562255e5.js",
+    "precache-manifest.9c3054b5d8646bfdd7261680b5dccec6.js": "/personal_website/precache-manifest.9c3054b5d8646bfdd7261680b5dccec6.js",
     "service-worker.js": "/personal_website/service-worker.js",
-    "static/js/2.b772b7a6.chunk.js.LICENSE.txt": "/personal_website/static/js/2.b772b7a6.chunk.js.LICENSE.txt",
+    "static/js/2.261ec1bb.chunk.js.LICENSE.txt": "/personal_website/static/js/2.261ec1bb.chunk.js.LICENSE.txt",
     "static/media/ComputerScienceGirl.jpg": "/personal_website/static/media/ComputerScienceGirl.2f37a260.jpg",
+    "static/media/autumn.jpg": "/personal_website/static/media/autumn.7fd69f42.jpg",
     "static/media/chinesepainting.jpg": "/personal_website/static/media/chinesepainting.7ab22726.jpg",
     "static/media/hongkong.jpg": "/personal_website/static/media/hongkong.9044d6dd.jpg",
-    "static/media/imagegirl.jpg": "/personal_website/static/media/imagegirl.b6c30208.jpg",
     "static/media/main.svg": "/personal_website/static/media/main.59fe56c9.svg",
     "static/media/mindful.png": "/personal_website/static/media/mindful.4f0626cd.png",
     "static/media/self.png": "/personal_website/static/media/self.57b6b572.png",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.684a33f3.js",
-    "static/js/2.b772b7a6.chunk.js",
-    "static/js/main.f4ba8ccd.chunk.js"
+    "static/js/2.261ec1bb.chunk.js",
+    "static/js/main.79c5f23f.chunk.js"
   ]
 }
