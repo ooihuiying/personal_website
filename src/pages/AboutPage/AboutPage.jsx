@@ -15,21 +15,26 @@ const AboutPage = ({ location: { pathname } = {} } = {}) => {
     <PortalLayout pathname={pathname}>
       <div class="image">
         <Background>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <AboutCard>
             <div class="content">
               <br />
-              <h1>Hello, 你好!</h1>
+              <h1>About Me</h1>
               <br />
-              <p> Welcome to my blog! </p>
-              <p>My name is Hui Ying. I'm a Software engineer, earnest reader and writer with an overactive imagination.</p>
+              <p> Hello, I am Hui Ying. I'm a Software engineer, earnest reader and writer with an overactive imagination. I am an avid runner and I enjoy
+              being in nature!
+              </p>
+              <p>I have recently graduated from the National University of Singapore with a degree in Computer Science.</p>
               <p> I don’t have the best language skills, but I do enjoy reading, writing and documenting things I have learned.
-              Most of my written works here will also be on my medium account: @liverungrow. I plan to post my articles
-              here and hopefully churn out useful and interesting articles for readers all over the world! I have many interests. </p>
-              <p>Both the sciences and arts fascinate me and are an inextricable part of my life.
-              The sciences are what makes things happen. Innovation and technology helps propel the world to the next stage of development.
-              On the other hand, the arts (both humanities and literal art) help make life worth living. We can’t do without beautiful things
-              or understanding of the world. </p>
-              <p> Therefore, I hope to pursue my interests in both areas and be a well-rounded individual.</p>
+              The intention of this website is to serve as a repository of articles which i hope to write in the areas of topics that
+              i am interested in. Prior to creating this website, most of my written works were published on my medium account: @liverungrow. I
+              will continue to update both platforms so that it is easily accessible. </p>
+              <p>I really hope you will enjoy my articles, have a nice day!</p>
             </div>
             <br />
             <br />
