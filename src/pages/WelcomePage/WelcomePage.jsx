@@ -16,11 +16,13 @@ const WelcomePage = ({ location: { pathname } } = {}) => {
   const latestPost = useRef([]);
   const history = useHistory();
   const [active, setActive] = useState();
+  const [loading, setLoading] = useState(true);
   const { setErrorStatusCode } = useErrorStatus();
 
   useEffect(() => {
     async function fetchLatestPosts() {
       try {
+        setLoading(true);
         var response = await FirebaseWrapper.ref('cs-posts').getAllPosts().then((posts) => {
           if (posts) {
             // contains {title, text, date, topImage}
@@ -29,6 +31,7 @@ const WelcomePage = ({ location: { pathname } } = {}) => {
         });
         latestPost.current = response
         setActive(latestPost.current[0])
+        setLoading(false)
       } catch (e) {
         // Show error message
         setErrorStatusCode(400);
@@ -57,7 +60,7 @@ const WelcomePage = ({ location: { pathname } } = {}) => {
 
   return (
     <PortalLayout pathname={pathname}>
-      {latestPost.current.length > 0 ? (
+      {!loading && latestPost.current.length > 0 ? (
         <div style={style.main}>
           <Container>
             <Grid container columns={2}>
@@ -79,9 +82,9 @@ const WelcomePage = ({ location: { pathname } } = {}) => {
           </Container>
         </div>
       )
-        : (
+        : loading ? (
           <LoadSpinner />
-        )}
+        ) : <div>No Posts!</div>}
     </PortalLayout>
   );
 };

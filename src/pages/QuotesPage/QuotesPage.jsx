@@ -6,11 +6,14 @@ import style from './QuotesPage.styles.jsx';
 import FirebaseWrapper from '../../api/connect-firebase';
 import mindful from '../../images/mindful.png';
 
+
+const pathName = '/quotes-posts'
+const db = FirebaseWrapper.ref(pathName)
+
 const Quotes = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const colorArray = ["red", "orange", "yellow", "olive", "green", "teal", "blue", "violet", "purple", "pink", "brown", "grey", "black"]
-  const db = FirebaseWrapper.ref('/quotes-posts')
 
   useEffect(() => {
     async function fetchQuotesPosts() {

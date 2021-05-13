@@ -46,46 +46,24 @@ class FirebaseWrapper {
     }
 
     get10Posts() {
-        if (this.lastDocument === null && this.firstDocument === null) {
-            return this._ref
-                .orderByChild("date") // date in ascending order
-                .limitToFirst(this.LIMIT)
-                .once("value")
-                .then(snapshot => {
-                    let total = [];
-                    var temp = [];
-                    snapshot.forEach(post => {
-                        //add new element to the front of the array
-                        temp = temp.concat(post.val().title);
-                        total = total.concat(post.val());
-                    })
-                    if (temp.length > 0) {
-                        this.lastDocument = temp[temp.length - 1];
-                        this.firstDocument = temp[0];
-                    }
-                    return total;
-                }).catch(console.error);
-        } else {
-            return this._ref
-                .orderByChild("date") // date in ascending order
-                .limitToFirst(this.LIMIT)
-                .startAt(this.firstDocument) // inclusive
-                .once("value")
-                .then(snapshot => {
-                    let total = [];
-                    var temp = [];
-                    snapshot.forEach(post => {
-                        //add new element to the front of the array
-                        temp = temp.concat(post.val().title);
-                        total = total.concat(post.val());
-                    })
-                    if (temp.length > 0) {
-                        this.lastDocument = temp[temp.length - 1];
-                        this.firstDocument = temp[0];
-                    }
-                    return total;
-                }).catch(console.error);
-        }
+        return this._ref
+            .orderByChild("date") // date in ascending order
+            .limitToFirst(this.LIMIT)
+            .once("value")
+            .then(snapshot => {
+                let total = [];
+                var temp = [];
+                snapshot.forEach(post => {
+                    //add new element to the front of the array
+                    temp = temp.concat(post.val().title);
+                    total = total.concat(post.val());
+                })
+                if (temp.length > 0) {
+                    this.lastDocument = temp[temp.length - 1];
+                    this.firstDocument = temp[0];
+                }
+                return total;
+            }).catch(console.error);
     }
 
     getNext10Posts() {
