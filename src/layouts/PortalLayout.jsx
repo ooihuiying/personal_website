@@ -11,11 +11,11 @@ const PortalLayout = ({ children, pathname }) => {
       <div className="layout--main">
         <div className="layout--navbar">
           <div className="navbar--title" >
-            <NavTitle putColour selected={pathname === '/'} to="/">Hui Ying</NavTitle>
+            <NavTitle selected={pathname === '/'} to="/">Hui Ying</NavTitle>
           </div>
           <div className="navbar--item">
-            <NavItem selected={pathname === '/about'} to="/about">
-              About Me
+            <NavItem selected={pathname === '/latest'} to="/latest">
+              Latest
             </NavItem>
             <NavItem selected={pathname === '/tech-world'} to="/tech-world">
               Tech World

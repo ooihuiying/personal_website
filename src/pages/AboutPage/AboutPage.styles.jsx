@@ -1,24 +1,27 @@
-import styled from 'styled-components';
+import autumn from '../../images/autumn.jpg';
+import styled from "styled-components";
 import theme from '../../config/theme';
 
-export const AboutHeader = styled.h1`
-  width: 100%;
-  text-align: center;
+export const Background = styled.div`
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('${autumn}');;
+  background-size: cover;
+  background-attachment:fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  align-items: center;
+`
 
-  :hover {
-    color: black;
-    cursor: pointer;
-    transform: scale(1.25);
-    transition: transform 0.4s;
-  }
-`;
-
-export const AboutText = styled.span`
-  white-space: pre-line;
-`;
-
-export const HighlightText = styled.span`
-  color: ${theme.colours.maroon};
-  font-weight: bold;
-  width: 100%;
-`;
+export const AboutCard = styled.div`
+  background-color: rgba(255,255,255,0.5);
+  font-size: 20px;
+  font-family: cursive;
+  width: calc(100% - 200px);
+  margin: 100px;
+  color: ${theme.colours.black};
+`

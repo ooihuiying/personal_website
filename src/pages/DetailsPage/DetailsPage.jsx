@@ -11,7 +11,7 @@ const DetailsPage = ({ pathName, data, handleNextButtonClick, handlePrevButtonCl
   return (
     <PortalLayout pathname={pathName}>
       <h1 style={style.text}>{title}</h1>
-      <img style={style.image} className="ui centered massive image" src={image}></img>
+      <img style={style.image} className="ui fluid image" src={image}></img>
       <div>
         {loading ? (
           <div>
@@ -38,8 +38,8 @@ const DetailsPage = ({ pathName, data, handleNextButtonClick, handlePrevButtonCl
             </div>
           </div>
         ) : (
-              <h1 style={style.text}>{"No Post Yet!"}</h1>
-            )}
+          <h1 style={style.text}>{"No Post Yet!"}</h1>
+        )}
         {data.length > 0 ? (
           <Grid centered stackable columns={2}>
             <Grid.Row >

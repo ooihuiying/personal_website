@@ -44,6 +44,7 @@ export const PortalLayoutStyled = styled('div')`
       flex: 1 1 auto;
       margin-top: 150px;
       background-color: ${theme.colours.white};
+      text-align: center;
     }
   }
 `;
@@ -64,6 +65,5 @@ export const NavItem = styled(Link)`
 export const NavTitle = styled(Link)`
   font-size: 40px;
   font-weight: bold;
-  color: ${({ putColour } = {}) =>
-    putColour ? theme.colours.maroon : theme.colours.black};
+  color: ${theme.colours.maroon};
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, HashRouter } from 'react-router-dom';
-import WelcomePage from './pages/WelcomePage/WelcomePage';
+import LatestPage from './pages/LatestPage/LatestPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import QuotesPage from './pages/QuotesPage/QuotesPage';
 import GlobeTrottingPage from './pages/GlobeTrottingPage/GlobeTrottingPage';
@@ -19,9 +19,8 @@ ReactDOM.render(
   <HashRouter >
     <ErrorHandler>
       <Switch>
-        <Route exact path="/" component={WelcomePage} />
-        <Route exact path="/" component={WelcomePage} />
-        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/" component={AboutPage} />
+        <Route exact path="/latest" component={LatestPage} />
         <Route exact path="/tech-world" component={TechWorldPage} />
         <Route exact path="/book-reviews" component={BookReviewsPage} />
         <Route exact path="/chinese-culture" component={ChineseCulturePage} />
