@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PortalLayout from '../../layouts/PortalLayout';
-import { Container } from './FullArticlePage.styles';
+import { Container, Background, ImageContainer } from './FullArticlePage.styles';
 import { useLocation } from 'react-router-dom'
-import { Article } from '../../components/Article/Article';
+import { Divider } from 'semantic-ui-react';
 
 const FullArticlePage = () => {
   const location = useLocation();
@@ -18,10 +18,23 @@ const FullArticlePage = () => {
 
   return (
     <PortalLayout pathname={"/full_article"}>
-      <Container>
-        <Article post={data} displayImage={true} />
-      </Container>
-    </PortalLayout>
+      <Background >
+        <Container>
+          <h1 as='h2'>{data.title || ""}</h1>
+          {data.topImage ? (
+            <ImageContainer>
+              <img
+                src={data.topImage}
+                alt="Image"
+                className="ui centered massive image"
+              />
+            </ImageContainer>
+          ) : (<div></div>)}
+          <Divider horizontal>{data.date || ""}</Divider>
+          <div dangerouslySetInnerHTML={{ __html: data.text || "" }}></div>
+        </Container>
+      </Background>
+    </PortalLayout >
   );
 };
 

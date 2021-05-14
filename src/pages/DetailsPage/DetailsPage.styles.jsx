@@ -15,7 +15,7 @@ const style = {
   },
 
   text: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
 
   image: {

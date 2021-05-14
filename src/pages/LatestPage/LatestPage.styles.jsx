@@ -9,10 +9,6 @@ const style = {
   }
 };
 
-export const Container = styled.div`
-  margin-top: 20px;
-`;
-
 export const ButtonWrapper = styled.div`
   text-align: end;
 `;

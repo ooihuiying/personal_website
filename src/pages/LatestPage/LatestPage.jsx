@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
-  Grid, Divider
+  Grid
 } from 'semantic-ui-react';
 import { Article } from '../../components/Article/Article';
 import PortalLayout from '../../layouts/PortalLayout';
 import { Timeline } from '../../components/Timeline/Timeline';
-import style, { Container, ButtonWrapper } from './LatestPage.styles';
+import style, { ButtonWrapper } from './LatestPage.styles';
 import { useErrorStatus } from '../../ErrorHandler';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
 import FirebaseWrapper from '../../api/connect-firebase';
 
-const LatestPage = ({ location: { pathname } } = {}) => {
+const LatestPage = ({ pathname }) => {
+
   const latestPost = useRef([]);
   const history = useHistory();
   const [active, setActive] = useState();
@@ -23,7 +24,7 @@ const LatestPage = ({ location: { pathname } } = {}) => {
     async function fetchLatestPosts() {
       try {
         setLoading(true);
-        var response = await FirebaseWrapper.ref('TOP10').getAllPosts().then((posts) => {
+        var response = await FirebaseWrapper.ref(pathname).getAllPosts().then((posts) => {
           if (posts) {
             // contains {title, text, date, topImage}
             return posts
@@ -62,24 +63,21 @@ const LatestPage = ({ location: { pathname } } = {}) => {
     <PortalLayout pathname={pathname}>
       {!loading && latestPost.current.length > 0 ? (
         <div style={style.main}>
-          <Container>
-            <Grid container columns={2}>
-              <Grid.Column>
-                <Timeline
-                  allPosts={latestPost.current}
-                  active={active}
-                  onClick={handleTimelineChange}
-                />
-              </Grid.Column>
-              <Grid.Column >
-                <Article post={active} displayImage={false} />
-                <ButtonWrapper>
-                  <ExploreButton handleExploreButtonClick={handleExploreButtonClick} text={"Explore"} pointRight={true} />
-                </ButtonWrapper>
-              </Grid.Column>
-              <Divider hidden />
-            </Grid>
-          </Container>
+          <Grid >
+            <Grid.Column width={4}>
+              <Timeline
+                allPosts={latestPost.current}
+                active={active}
+                onClick={handleTimelineChange}
+              />
+            </Grid.Column>
+            <Grid.Column width={11}>
+              <Article post={active} />
+              <ButtonWrapper>
+                <ExploreButton handleExploreButtonClick={handleExploreButtonClick} text={"Explore"} pointRight={true} />
+              </ButtonWrapper>
+            </Grid.Column>
+          </Grid>
         </div>
       )
         : loading ? (

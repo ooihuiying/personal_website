@@ -1,11 +1,71 @@
-import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import PortalLayout from '../../layouts/PortalLayout';
 import { DetailCard } from '../../components/DetailCard/DetailCard';
 import style, { ButtonWrapper, Background, PostsCard, Header } from './DetailsPage.styles';
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
+import React, { useEffect, useState } from 'react';
 
-const DetailsPage = ({ pathname, data, handleNextButtonClick, handlePrevButtonClick, loading, image, title }) => {
+const DetailsPage = ({ pathname, image, title, db }) => {
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  async function fetchPosts() {
+    setLoading(true)
+    var response = await db.get10Posts().then((posts) => {
+      if (posts) {
+        // contains {title, text, date, topImage}
+        return posts
+      }
+    });
+    if (response.length > 0) {
+      setData(response)
+    } else {
+      setData([])
+    }
+    setLoading(false)
+  }
+
+  async function fetchNextPosts() {
+    setLoading(true)
+    var response = await db.getNext10Posts().then((posts) => {
+      if (posts) {
+        // contains {title, text, date, topImage}
+        return posts
+      }
+    });
+    if (response.length > 0) {
+      setData(response)
+    }
+    setLoading(false)
+  }
+
+  async function fetchPrevPosts() {
+    setLoading(true)
+    var response = await db.getPrev10Posts().then((posts) => {
+      if (posts) {
+        // contains {title, text, date, topImage}
+        return posts
+      }
+    });
+    if (response.length > 0) {
+      setData(response)
+    }
+    setLoading(false)
+  }
+
+  const handlePrevButtonClick = async () => {
+    fetchPrevPosts();
+  }
+  const handleNextButtonClick = async () => {
+    fetchNextPosts();
+  };
+
+  useEffect(() => {
+    // Trigger fetchPosts if the pathname changes
+    fetchPosts();
+  }, [pathname]);
+
   return (
     <PortalLayout pathname={pathname}>
       <div className="image">

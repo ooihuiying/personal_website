@@ -16,6 +16,8 @@ firebase.initializeApp(firebaseConfig);
 
 /**
  * Wrapper class to interface with firebase
+ * Orderby needs to be there in order for StartAfter, StartAt, endAt etc to work. IT defined
+ * the field of start/end value
  */
 class FirebaseWrapper {
 
@@ -23,7 +25,7 @@ class FirebaseWrapper {
         this._ref = firebase.database().ref(path);
         this.lastDocument = null;
         this.firstDocument = null;
-        this.LIMIT = 10;
+        this.LIMIT = 2;
     }
 
     static ref(path) {
@@ -31,6 +33,7 @@ class FirebaseWrapper {
     }
 
     getAllPosts() {
+
         return this._ref
             .orderByChild("date") // date in ascending order
             .once("value")
@@ -55,7 +58,7 @@ class FirebaseWrapper {
                 var temp = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().title);
+                    temp = temp.concat(post.val().date);
                     total = total.concat(post.val());
                 })
                 if (temp.length > 0) {
@@ -77,7 +80,7 @@ class FirebaseWrapper {
                 var temp = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().title);
+                    temp = temp.concat(post.val().date);
                     total = total.concat(post.val());
                 })
                 if (temp.length > 0) {
@@ -91,7 +94,7 @@ class FirebaseWrapper {
     getPrev10Posts() {
         return this._ref
             .orderByChild("date") // date in ascending order
-            .limitToLast(this.LIMIT)
+            .limitToLast(this.LIMIT + 1)
             .endBefore(this.firstDocument) // exclusive
             .once("value")
             .then(snapshot => {
@@ -99,7 +102,7 @@ class FirebaseWrapper {
                 var temp = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().title);
+                    temp = temp.concat(post.val().date);
                     total = total.concat(post.val());
                 })
                 if (temp.length > 0) {

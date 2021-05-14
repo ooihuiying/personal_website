@@ -13,7 +13,7 @@ const AboutPage = ({ location: { pathname } = {} } = {}) => {
           <br />
           <br />
           <AboutCard>
-            <Grid  >
+            <Grid >
               <Grid.Column width={3}>
                 <Image src={imagegirl} size='small' circular />
                 <h2><FaGlobeAsia color="maroon" />{" Singapore"}</h2>
