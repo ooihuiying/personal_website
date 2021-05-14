@@ -1,21 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useHistory } from 'react-router-dom';
 import {
   Grid
 } from 'semantic-ui-react';
 import { Article } from '../../components/Article/Article';
 import PortalLayout from '../../layouts/PortalLayout';
 import { Timeline } from '../../components/Timeline/Timeline';
-import style, { ButtonWrapper } from './LatestPage.styles';
+import style from './LatestPage.styles';
 import { useErrorStatus } from '../../ErrorHandler';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
-import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
 import FirebaseWrapper from '../../api/connect-firebase';
 
 const LatestPage = ({ pathname }) => {
 
   const latestPost = useRef([]);
-  const history = useHistory();
   const [active, setActive] = useState();
   const [loading, setLoading] = useState(true);
   const { setErrorStatusCode } = useErrorStatus();
@@ -26,7 +23,7 @@ const LatestPage = ({ pathname }) => {
         setLoading(true);
         var response = await FirebaseWrapper.ref(pathname).getAllPosts().then((posts) => {
           if (posts) {
-            // contains {title, text, date, topImage}
+            // contains {title, text, date, topImage, id}
             return posts
           }
         });
@@ -45,25 +42,11 @@ const LatestPage = ({ pathname }) => {
     setActive(activeItem);
   };
 
-  const handleExploreButtonClick = async () => {
-    const query = {
-      title: active.title,
-      text: active.text,
-      date: active.date,
-      topImage: active.topImage,
-    };
-
-    history.push({
-      pathname: '/full_article',
-      state: { post: query }
-    });
-  };
-
   return (
     <PortalLayout>
       {!loading && latestPost.current.length > 0 ? (
         <div style={style.main}>
-          <Grid >
+          <Grid>
             <Grid.Column width={4}>
               <Timeline
                 allPosts={latestPost.current}
@@ -73,9 +56,6 @@ const LatestPage = ({ pathname }) => {
             </Grid.Column>
             <Grid.Column width={11}>
               <Article post={active} />
-              <ButtonWrapper>
-                <ExploreButton handleExploreButtonClick={handleExploreButtonClick} text={"Explore"} pointRight={true} />
-              </ButtonWrapper>
             </Grid.Column>
           </Grid>
         </div>

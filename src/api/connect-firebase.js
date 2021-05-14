@@ -35,6 +35,16 @@ class FirebaseWrapper {
         return new FirebaseWrapper(path);
     }
 
+    getSinglePost() {
+        return this._ref
+            .orderByChild("date") // date in ascending order
+            .once("value")
+            .then(post => {
+                return post.val();
+            })
+            .catch(console.error);
+    }
+
     getAllPosts() {
         return this._ref
             .orderByChild("date") // date in ascending order
@@ -43,7 +53,9 @@ class FirebaseWrapper {
                 let total = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    total = [post.val()].concat(total);
+                    var newPost = post.val();
+                    newPost['id'] = post.key;
+                    total = [newPost].concat(total);
                 })
                 return total;
             })
@@ -59,9 +71,12 @@ class FirebaseWrapper {
                 let total = [];
                 var temp = [];
                 snapshot.forEach(post => {
+
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().date);
-                    total = [post.val()].concat(total);
+                    var newPost = post.val();
+                    newPost['id'] = post.key;
+                    temp = temp.concat(newPost.date);
+                    total = [newPost].concat(total);
                 })
                 if (temp.length > 0) {
                     this.lastDocument = temp[temp.length - 1];
@@ -82,8 +97,10 @@ class FirebaseWrapper {
                 var temp = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().date);
-                    total = [post.val()].concat(total);
+                    var newPost = post.val();
+                    newPost['id'] = post.key;
+                    temp = temp.concat(newPost.date);
+                    total = [newPost].concat(total);
                 })
                 if (temp.length > 0) {
                     this.lastDocument = temp[temp.length - 1];
@@ -104,8 +121,10 @@ class FirebaseWrapper {
                 var temp = [];
                 snapshot.forEach(post => {
                     //add new element to the front of the array
-                    temp = temp.concat(post.val().date);
-                    total = [post.val()].concat(total);
+                    var newPost = post.val();
+                    newPost['id'] = post.key;
+                    temp = temp.concat(newPost.date);
+                    total = [newPost].concat(total);
                 })
                 if (temp.length > 0) {
                     this.lastDocument = temp[temp.length - 1];

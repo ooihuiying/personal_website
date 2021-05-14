@@ -9,8 +9,4 @@ const style = {
   }
 };
 
-export const ButtonWrapper = styled.div`
-  text-align: end;
-`;
-
 export default style;

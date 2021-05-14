@@ -5,8 +5,7 @@ import style, { ButtonWrapper, Background, PostsCard, Header } from './DetailsPa
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
 import React, { useEffect, useState } from 'react';
 
-const DetailsPage = ({ image, title, db }) => {
-
+const DetailsPage = ({ pathname, image, title, db }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -14,15 +13,17 @@ const DetailsPage = ({ image, title, db }) => {
     setLoading(true)
     var response = await db.get10Posts().then((posts) => {
       if (posts) {
-        // contains {title, text, date, topImage}
+        // contains {title, text, date, topImage, id}
         return posts
       }
     });
+
     if (response.length > 0) {
       setData(response)
     } else {
       setData([])
     }
+
     setLoading(false)
   }
 
@@ -93,7 +94,7 @@ const DetailsPage = ({ image, title, db }) => {
                     <Grid centered stackable columns={1}>
                       <Grid.Column>
                         {data.map((result) => (
-                          <DetailCard title={result.title} text={result.text} date={result.date} topImage={result.topImage} />
+                          <DetailCard title={result.title} text={result.text} date={result.date} topImage={result.topImage} id={result.id} pathname={pathname} />
                         ))}
                       </Grid.Column>
                     </Grid>

@@ -4,6 +4,7 @@ import bluesea from '../../images/bluesea.jpg';
 import { ImageContainer, SimpleContainer } from './Article.styles'
 
 // post: {title, text, date, topImage}
+// Accessed from the Latest Page
 export const Article = ({ post } = {}) => {
   return (
     <SimpleContainer>

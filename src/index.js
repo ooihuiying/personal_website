@@ -29,13 +29,13 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" ><AboutPage /></Route>
         <Route exact path="/latest"><LatestPage pathname='TOP10' /></Route>
-        <Route exact path="/tech-world"><DetailsPage image={compsci_img} title='Tech World' db={cs_db} /></Route>
-        <Route exact path="/book-reviews"><DetailsPage image={book_reviews_img} title='Book Reviews' db={bk_db} /></Route>
-        <Route exact path="/chinese-culture"><DetailsPage image={chinese_img} title='Chinese Culture' db={chi_db} /></Route>
-        <Route exact path="/globe_trotting"><DetailsPage image={globe_img} title='Globe Trotting' db={gb_db} /></Route>
+        <Route exact path="/tech-world"><DetailsPage pathname='/cs-posts' image={compsci_img} title='Tech World' db={cs_db} /></Route>
+        <Route exact path="/book-reviews"><DetailsPage pathname='/book-reviews-posts' image={book_reviews_img} title='Book Reviews' db={bk_db} /></Route>
+        <Route exact path="/chinese-culture"><DetailsPage pathname='/chinese-culture-posts' image={chinese_img} title='Chinese Culture' db={chi_db} /></Route>
+        <Route exact path="/globe_trotting"><DetailsPage pathname='/globe-trotting-posts' image={globe_img} title='Globe Trotting' db={gb_db} /></Route>
         <Route exact path="/quotes"><QuotesPage /></Route>
-        <Route exact path="/reflections"><DetailsPage image={reflect_img} title='Reflections' db={rf_db} /></Route>
-        <Route exact path="/full_article"><FullArticlePage /></Route>
+        <Route exact path="/reflections"><DetailsPage pathname='/reflection-posts' image={reflect_img} title='Reflections' db={rf_db} /></Route>
+        <Route path="/full_article"><FullArticlePage /></Route>
         <Route path="*" component={Error404} />
       </Switch>
     </ErrorHandler>
