@@ -19,7 +19,7 @@ const FullArticlePage = () => {
   return (
     <PortalLayout pathname={"/full_article"}>
       <Container>
-        <Article post={data} />
+        <Article post={data} displayImage={true} />
       </Container>
     </PortalLayout>
   );

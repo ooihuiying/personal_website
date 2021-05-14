@@ -72,7 +72,7 @@ const LatestPage = ({ location: { pathname } } = {}) => {
                 />
               </Grid.Column>
               <Grid.Column >
-                <Article post={active} />
+                <Article post={active} displayImage={false} />
                 <ButtonWrapper>
                   <ExploreButton handleExploreButtonClick={handleExploreButtonClick} text={"Explore"} pointRight={true} />
                 </ButtonWrapper>
