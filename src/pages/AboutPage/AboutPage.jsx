@@ -4,10 +4,10 @@ import { Button, Icon, Image, Grid } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
 import imagegirl from '../../images/imagegirl.jpg';
 import { FaGlobeAsia } from 'react-icons/fa';
-const AboutPage = ({ location: { pathname } = {} } = {}) => {
+const AboutPage = () => {
 
   return (
-    <PortalLayout pathname={pathname}>
+    <PortalLayout>
       <div className="image">
         <Background>
           <br />

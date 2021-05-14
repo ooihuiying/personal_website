@@ -60,7 +60,7 @@ const LatestPage = ({ pathname }) => {
   };
 
   return (
-    <PortalLayout pathname={pathname}>
+    <PortalLayout>
       {!loading && latestPost.current.length > 0 ? (
         <div style={style.main}>
           <Grid >

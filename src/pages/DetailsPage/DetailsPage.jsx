@@ -5,7 +5,7 @@ import style, { ButtonWrapper, Background, PostsCard, Header } from './DetailsPa
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
 import React, { useEffect, useState } from 'react';
 
-const DetailsPage = ({ pathname, image, title, db }) => {
+const DetailsPage = ({ image, title, db }) => {
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -62,12 +62,12 @@ const DetailsPage = ({ pathname, image, title, db }) => {
   };
 
   useEffect(() => {
-    // Trigger fetchPosts if the pathname changes
+    // Trigger fetchPosts if the title changes
     fetchPosts();
-  }, [pathname]);
+  }, [title]);
 
   return (
-    <PortalLayout pathname={pathname}>
+    <PortalLayout>
       <div className="image">
         <Background image={image}>
           <br />

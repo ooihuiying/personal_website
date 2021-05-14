@@ -5,7 +5,7 @@ import { FaHome } from 'react-icons/fa';
 
 import { PortalLayoutStyled, NavTitle, NavItem } from './PortalLayout.styles';
 
-const PortalLayout = ({ children, pathname }) => {
+const PortalLayout = ({ children }) => {
   return (
     <PortalLayoutStyled>
       <div className="layout--main">

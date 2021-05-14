@@ -17,7 +17,7 @@ const FullArticlePage = () => {
   }, []);
 
   return (
-    <PortalLayout pathname={"/full_article"}>
+    <PortalLayout>
       <Background >
         <Container>
           <h1 as='h2'>{data.title || ""}</h1>

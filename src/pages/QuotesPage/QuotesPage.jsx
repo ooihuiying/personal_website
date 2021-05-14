@@ -30,7 +30,7 @@ const Quotes = () => {
   }, []);
 
   return (
-    <PortalLayout pathname="/quotes">
+    <PortalLayout >
       <div className="image">
         <Background image={quoteImage}>
           <PostsCard>
