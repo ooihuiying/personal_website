@@ -28,7 +28,7 @@ class FirebaseWrapper {
         this._ref = firebase.database().ref(path);
         this.lastDocument = null;
         this.firstDocument = null;
-        this.LIMIT = 2;
+        this.LIMIT = 10;
     }
 
     static ref(path) {
