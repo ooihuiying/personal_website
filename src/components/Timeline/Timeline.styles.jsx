@@ -7,7 +7,6 @@ export const TimelineText = styled.span`
   margin-left: 40px;
 `;
 
-
 export const TimelineDot = styled.span`
   display: inline-flex;
   justify-content: space-between;

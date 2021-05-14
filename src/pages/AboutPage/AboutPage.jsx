@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Background, TopCard, AboutCard } from "./AboutPage.styles";
-import { Container, Segment, Button, Icon, Image, Grid, Divider } from "semantic-ui-react"
+import React from "react";
+import { Background, AboutCard } from "./AboutPage.styles";
+import { Button, Icon, Image, Grid } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
-import ReactCardFlip from 'react-card-flip';
 import imagegirl from '../../images/imagegirl.jpg';
 import { FaGlobeAsia } from 'react-icons/fa';
 const AboutPage = ({ location: { pathname } = {} } = {}) => {

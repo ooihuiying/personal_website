@@ -6,7 +6,6 @@ import style, { Background, PostsCard, Header } from './QuotesPage.styles.jsx';
 import FirebaseWrapper from '../../api/connect-firebase';
 import quoteImage from '../../images/pinkmountain.jpg';
 
-
 const pathName = '/quotes-posts'
 const db = FirebaseWrapper.ref(pathName)
 
