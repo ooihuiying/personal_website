@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DetailsPage from '../DetailsPage/DetailsPage';
 import FirebaseWrapper from '../../api/connect-firebase';
-import heaven from '../../images/templeofheaven.jpg';
+import chinese from '../../images/hill.jpg';
 
 const pathName = '/chinese-culture-posts'
 const db = FirebaseWrapper.ref(pathName)
@@ -66,7 +66,7 @@ const ChineseCulturePage = () => {
 
   return (
     <div>
-      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={heaven} title={"Chinese Culture"} />
+      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={chinese} title={"Chinese Culture"} />
     </div>
   );
 };

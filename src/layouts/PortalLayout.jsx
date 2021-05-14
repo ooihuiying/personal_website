@@ -11,28 +11,28 @@ const PortalLayout = ({ children, pathname }) => {
       <div className="layout--main">
         <div className="layout--navbar">
           <div className="navbar--title" >
-            <NavTitle selected={pathname === '/'} to="/">Hui Ying</NavTitle>
+            <NavTitle to="/">Hui Ying</NavTitle>
           </div>
           <div className="navbar--item">
-            <NavItem selected={pathname === '/latest'} to="/latest">
+            <NavItem to="/latest">
               Latest
             </NavItem>
-            <NavItem selected={pathname === '/tech-world'} to="/tech-world">
+            <NavItem to="/tech-world">
               Tech World
             </NavItem>
-            <NavItem selected={pathname === '/book-reviews'} to="/book-reviews">
+            <NavItem to="/book-reviews">
               Book Reviews
             </NavItem>
-            <NavItem selected={pathname === '/chinese-culture'} to="/chinese-culture">
+            <NavItem to="/chinese-culture">
               Chinese Culture
             </NavItem>
-            <NavItem selected={pathname === '/globe_trotting'} to="/globe_trotting">
+            <NavItem to="/globe_trotting">
               Globe Trotting
             </NavItem>
-            <NavItem selected={pathname === '/quotes'} to="/quotes">
+            <NavItem to="/quotes">
               Quotes
             </NavItem>
-            <NavItem selected={pathname === '/reflections'} to="/reflections">
+            <NavItem to="/reflections">
               Reflections
             </NavItem>
           </div>

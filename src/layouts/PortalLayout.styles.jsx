@@ -53,7 +53,6 @@ export const NavItem = styled(Link)`
   font-size: 18px;
   font-weight: bold;
   color: ${theme.colours.maroon};
-  text-decoration: ${({ selected }) => (selected ? 'underline' : 'none')};
   padding: 0px 0px 0px 40px;
 
   :hover {

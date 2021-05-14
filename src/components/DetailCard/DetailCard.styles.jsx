@@ -2,7 +2,7 @@ import theme from '../../config/theme';
 import styled from 'styled-components';
 
 export const SegmentStyle = {
-  borderColor: theme.colours.maroon
+  backgroundColor: 'rgba(255, 255, 255, 0.7)'
 };
 
 export const ClickMore = styled.span`

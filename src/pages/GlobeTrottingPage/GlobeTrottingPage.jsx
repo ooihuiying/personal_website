@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DetailsPage from '../DetailsPage/DetailsPage';
 import FirebaseWrapper from '../../api/connect-firebase';
-import hongkong from '../../images/hongkong.jpg';
+import globe from '../../images/trailer.jpg';
 
 const pathName = '/globe-trotting-posts'
 const db = FirebaseWrapper.ref(pathName)
@@ -66,7 +66,7 @@ const GlobeTrottingPage = () => {
 
   return (
     <div>
-      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={hongkong} title={"Globe Trotting"} />
+      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={globe} title={"Globe Trotting"} />
     </div>
   );
 };

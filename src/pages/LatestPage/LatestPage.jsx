@@ -6,7 +6,7 @@ import {
 import { Article } from '../../components/Article/Article';
 import PortalLayout from '../../layouts/PortalLayout';
 import { Timeline } from '../../components/Timeline/Timeline';
-import style, { Container, ButtonWrapper } from './WelcomePage.styles';
+import style, { Container, ButtonWrapper } from './LatestPage.styles';
 import { useErrorStatus } from '../../ErrorHandler';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
@@ -87,6 +87,8 @@ const LatestPage = ({ location: { pathname } } = {}) => {
         ) : <div>No Posts!</div>}
     </PortalLayout>
   );
+
+
 };
 
 export default LatestPage;

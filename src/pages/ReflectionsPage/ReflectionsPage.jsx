@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DetailsPage from '../DetailsPage/DetailsPage';
 import FirebaseWrapper from '../../api/connect-firebase';
-import chinesepainting from '../../images/chinesepainting.jpg';
+import reflect from '../../images/reflect.jpg';
 
 const pathName = '/reflection-posts'
 const db = FirebaseWrapper.ref(pathName)
@@ -66,7 +66,7 @@ const ReflectionsPage = () => {
 
   return (
     <div>
-      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={chinesepainting} title={"Reflections"} />
+      <DetailsPage pathName={pathName} data={data} handleNextButtonClick={handleNextButtonClick} handlePrevButtonClick={handlePrevButtonClick} loading={loading} image={reflect} title={"Reflections"} />
     </div>
   );
 };

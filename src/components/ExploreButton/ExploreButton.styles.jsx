@@ -8,8 +8,7 @@ export const Explore = styled.span`
   align-items: center;
   color: ${theme.colours.maroon};
   :hover {
-    color: ${theme.colours.maroon};
-    opacity: 0.8;
+    background-color: rgba(255,255,255,0.5);
   }
 `;
 export const ButtonText = styled.span`

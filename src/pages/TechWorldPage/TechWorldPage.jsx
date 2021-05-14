@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DetailsPage from '../DetailsPage/DetailsPage';
 import FirebaseWrapper from '../../api/connect-firebase';
-import compsci from '../../images/ComputerScienceGirl.jpg';
+import compsci from '../../images/bluemountains.jpg';
 
 const pathName = '/cs-posts'
 const db = FirebaseWrapper.ref(pathName)
