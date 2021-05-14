@@ -38,6 +38,9 @@ const PortalLayout = ({ children, pathname }) => {
           </div>
         </div>
         <div className="layout--children">{children}</div>
+        <div className="layout--footer">
+
+        </div>
       </div>
     </PortalLayoutStyled>
   );

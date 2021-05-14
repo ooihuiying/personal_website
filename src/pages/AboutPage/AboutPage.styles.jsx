@@ -22,8 +22,8 @@ export const AboutCard = styled.div`
   font-size: 20px;
   font-family: cursive;
   width: calc(100% - 200px);
-  margin: 100px 100px 50px 100px;
+  margin: 100px;
   color: ${theme.colours.black};
   text-align: left;
-  padding: 50px;
+  padding: 80px;
 `
