@@ -1,37 +1,37 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Segment, Placeholder } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 import { SegmentStyle, ClickMore } from './DetailCard.styles';
 
 export const DetailCard = ({
-  title, text, date, topImage, id, tag, pathname
+  result, pathname
 } = {}) => {
   const history = useHistory();
 
   const handleClick = async () => {
     const query = {
-      title: title,
-      text: text,
-      date: date,
-      topImage: topImage,
-      tag: tag,
-      id: id
+      title: result.title,
+      text: result.text,
+      date: result.date,
+      topImage: result.topImage,
+      tag: result.tag,
+      id: result.id
     };
 
     history.push({
-      pathname: '/full_article' + pathname + '/' + id,
+      pathname: '/full_article' + pathname + '/' + result.id,
       state: { post: query }
     });
   }
 
-  return (title ? (
+  return (
     <Segment style={SegmentStyle}>
       <div className="ui items">
         <div className="item">
-          {topImage != null ? (
+          {result.topImage != null ? (
             <div className="image">
               <img
-                src={topImage}
+                src={result.topImage}
                 alt="Image"
                 width="200"
                 height="121"
@@ -39,34 +39,14 @@ export const DetailCard = ({
             </div>
           ) : (<div />)}
           <div className="content">
-            <div className="header">{title}</div>
-            <div className="meta">{date}</div>
-            <div className="description" dangerouslySetInnerHTML={{ __html: text.length > 1000 ? text.slice(0, 1000) : text || "" }}></div>
+            <div className="header">{result.title}</div>
+            <div className="meta">{result.date}</div>
+            <div className="description" dangerouslySetInnerHTML={{ __html: result.text.length > 1000 ? result.text.slice(0, 1000) : result.text || "" }}></div>
             <ClickMore className="meta" onClick={handleClick} >{"................. View More .................."}</ClickMore>
           </div>
         </div>
       </div>
     </Segment>
 
-  ) : (
-    <Segment style={SegmentStyle}>
-      <div className="ui items">
-        <div className="item">
-          <div className="image">
-            <Placeholder>
-              <Placeholder.Image />
-            </Placeholder>
-          </div>
-          <div className="content">
-            <Placeholder>
-              <Placeholder.Line length="full" />
-              <Placeholder.Line length="very long" />
-              <Placeholder.Line length="long" />
-              <Placeholder.Line length="medium" />
-            </Placeholder>
-          </div>
-        </div>
-      </div>
-    </Segment>
-  ));
+  );
 };

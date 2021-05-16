@@ -7,6 +7,7 @@ import PortalLayout from '../../layouts/PortalLayout';
 import { Timeline } from '../../components/Timeline/Timeline';
 import style from './LatestPage.styles';
 import { useErrorStatus } from '../../ErrorHandler';
+import { NoPostHeader } from '../../components/NoPostHeader/NoPostHeader';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import FirebaseWrapper from '../../api/connect-firebase';
 
@@ -62,11 +63,9 @@ const LatestPage = ({ pathname }) => {
       )
         : loading ? (
           <LoadSpinner />
-        ) : <div>No Posts!</div>}
+        ) : <NoPostHeader />}
     </PortalLayout>
   );
-
-
 };
 
 export default LatestPage;

@@ -1,6 +1,8 @@
 import { Grid } from 'semantic-ui-react';
 import PortalLayout from '../../layouts/PortalLayout';
 import { DetailCard } from '../../components/DetailCard/DetailCard';
+import { EmptyDetailCard } from '../../components/EmptyDetailCard/EmptyDetailCard';
+import { NoPostHeader } from '../../components/NoPostHeader/NoPostHeader';
 import style, { ButtonWrapper, Background, PostsCard, Header } from './DetailsPage.styles';
 import { ExploreButton } from '../../components/ExploreButton/ExploreButton';
 import React, { useEffect, useState } from 'react';
@@ -82,7 +84,7 @@ const DetailsPage = ({ pathname, image, title, db }) => {
                     <Grid centered stackable columns={1}>
                       <Grid.Column width={10}>
                         {[...Array(10)].map(() => (
-                          <DetailCard />
+                          <EmptyDetailCard />
                         ))}
                       </Grid.Column>
                     </Grid>
@@ -94,14 +96,14 @@ const DetailsPage = ({ pathname, image, title, db }) => {
                     <Grid centered stackable columns={1}>
                       <Grid.Column>
                         {data.map((result) => (
-                          <DetailCard title={result.title} text={result.text} date={result.date} topImage={result.topImage} id={result.id} tag={result.tag} pathname={pathname} />
+                          <DetailCard result={result} pathname={pathname} />
                         ))}
                       </Grid.Column>
                     </Grid>
                   </div>
                 </div>
               ) : (
-                <h1 style={style.text}>{"No Post Yet!"}</h1>
+                <NoPostHeader style={style.text} />
               )}
               {data.length > 0 ? (
                 <Grid centered stackable columns={2}>

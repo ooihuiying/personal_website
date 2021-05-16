@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Card } from 'semantic-ui-react';
 import PortalLayout from '../../layouts/PortalLayout';
 import { QuoteCard } from '../../components/QuoteCard/QuoteCard';
+import { EmptyQuoteCard } from '../../components/EmptyQuoteCard/EmptyQuoteCard';
+import { NoPostHeader } from '../../components/NoPostHeader/NoPostHeader';
 import style, { Background, PostsCard, Header } from './QuotesPage.styles.jsx';
 import FirebaseWrapper from '../../api/connect-firebase';
 import quoteImage from '../../images/pinkmountain.jpg';
@@ -39,7 +41,7 @@ const Quotes = () => {
                 <div className="row" style={style.card}>
                   <Card.Group centered >
                     {[...Array(4)].map(() => (
-                      <QuoteCard />
+                      <EmptyQuoteCard />
                     ))}
                   </Card.Group>
                 </div>
@@ -47,7 +49,7 @@ const Quotes = () => {
             ) : (!loading && data.length === 0) ? (
               <div>
                 <Header>My Favourite Quotes</Header>
-                <h1 style={style.text}>{"No Post Yet!"}</h1>
+                <NoPostHeader style={style.text} />
               </div>
             ) : (
               <div>

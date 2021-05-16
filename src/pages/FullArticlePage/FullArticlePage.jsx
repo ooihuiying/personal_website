@@ -19,7 +19,7 @@ const FullArticlePage = () => {
         setData(data);
         setLoading(false);
       } else {
-        // (2) Derive data from the Database
+        // (2) Derive data from the Database based on query url
         setLoading(true);
         const query_str = location.pathname.substring(1).split("/") // '/full_article' + pathname + '/' + id
         const pathname = query_str[1]
@@ -27,7 +27,7 @@ const FullArticlePage = () => {
         const db = FirebaseWrapper.ref(pathname + "/" + id)
         var data = await db.getSinglePost().then((post) => {
           if (post) {
-            // contains {title, text, date, topImage}
+            // contains {title, text, date, topImage, tag, id}
             return post
           }
         });
