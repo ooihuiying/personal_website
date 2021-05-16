@@ -43,6 +43,7 @@ const FullArticlePage = () => {
       <Background >
         {!loading ?
           <Container>
+            {data.tag != undefined ? <a className="ui red tag label">{data.tag}</a> : <div />}
             <h1 as='h2'>{data.title || ""}</h1>
             {data.topImage ? (
               <ImageContainer>

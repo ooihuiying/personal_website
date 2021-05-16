@@ -4,7 +4,7 @@ import { Segment, Placeholder } from 'semantic-ui-react';
 import { SegmentStyle, ClickMore } from './DetailCard.styles';
 
 export const DetailCard = ({
-  title, text, date, topImage, id, pathname
+  title, text, date, topImage, id, tag, pathname
 } = {}) => {
   const history = useHistory();
 
@@ -14,6 +14,7 @@ export const DetailCard = ({
       text: text,
       date: date,
       topImage: topImage,
+      tag: tag,
       id: id
     };
 

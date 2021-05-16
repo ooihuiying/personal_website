@@ -31,7 +31,7 @@ const DetailsPage = ({ pathname, image, title, db }) => {
     setLoading(true)
     var response = await db.getNext10Posts().then((posts) => {
       if (posts) {
-        // contains {title, text, date, topImage}
+        // contains {title, text, date, topImage (optional), tag, id}
         return posts
       }
     });
@@ -45,7 +45,7 @@ const DetailsPage = ({ pathname, image, title, db }) => {
     setLoading(true)
     var response = await db.getPrev10Posts().then((posts) => {
       if (posts) {
-        // contains {title, text, date, topImage}
+        // contains {title, text, date, topImage (optional), tag, id}
         return posts
       }
     });
@@ -94,7 +94,7 @@ const DetailsPage = ({ pathname, image, title, db }) => {
                     <Grid centered stackable columns={1}>
                       <Grid.Column>
                         {data.map((result) => (
-                          <DetailCard title={result.title} text={result.text} date={result.date} topImage={result.topImage} id={result.id} pathname={pathname} />
+                          <DetailCard title={result.title} text={result.text} date={result.date} topImage={result.topImage} id={result.id} tag={result.tag} pathname={pathname} />
                         ))}
                       </Grid.Column>
                     </Grid>
