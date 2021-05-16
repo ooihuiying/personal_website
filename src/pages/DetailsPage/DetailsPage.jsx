@@ -13,7 +13,7 @@ const DetailsPage = ({ pathname, image, title, db }) => {
     setLoading(true)
     var response = await db.get10Posts().then((posts) => {
       if (posts) {
-        // contains {title, text, date, topImage, id}
+        // contains {title, text, date, topImage (optional), tag, id}
         return posts
       }
     });

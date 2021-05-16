@@ -23,7 +23,7 @@ const LatestPage = ({ pathname }) => {
         setLoading(true);
         var response = await FirebaseWrapper.ref(pathname).getAllPosts().then((posts) => {
           if (posts) {
-            // contains {title, text, date, topImage, id}
+            // contains {title, text, date, topImage (optional), tag, id}
             return posts
           }
         });
