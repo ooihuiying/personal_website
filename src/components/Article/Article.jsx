@@ -1,6 +1,7 @@
 import React from 'react';
 import { Divider, Header } from 'semantic-ui-react';
 import bluesea from '../../images/bluesea.jpg';
+import ReactHtmlParser from 'react-html-parser';
 import { ImageContainer, SimpleContainer } from './Article.styles'
 
 // post: {title, text, date, topImage, tag}
@@ -20,7 +21,7 @@ export const Article = ({ post } = {}) => {
         />
       </ImageContainer>
       <Divider horizontal>{post.date || ""}</Divider>
-      <div dangerouslySetInnerHTML={{ __html: post.text || "" }}></div>
+      <div>{ReactHtmlParser(post.text || "")}</div>
     </SimpleContainer>
   );
 };

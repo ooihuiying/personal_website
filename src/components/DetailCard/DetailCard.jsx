@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
 import { SegmentStyle, ClickMore } from './DetailCard.styles';
+import ReactHtmlParser from 'react-html-parser';
 
 export const DetailCard = ({
   result, pathname
@@ -41,7 +42,7 @@ export const DetailCard = ({
           <div className="content">
             <div className="header">{result.title}</div>
             <div className="meta">{result.date}</div>
-            <div className="description" dangerouslySetInnerHTML={{ __html: result.text.length > 1000 ? result.text.slice(0, 1000) : result.text || "" }}></div>
+            <div>{result.text.length > 1000 ? ReactHtmlParser(result.text.slice(0, 1000)) : ReactHtmlParser(result.text) || ""}</div>
             <ClickMore className="meta" onClick={handleClick} >{"................. View More .................."}</ClickMore>
           </div>
         </div>

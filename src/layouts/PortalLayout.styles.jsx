@@ -5,6 +5,7 @@ import theme from '../config/theme';
 export const PortalLayoutStyled = styled('div')`
   height: 100%;
   width: 100%;
+  
 
   .layout--main {
     display: flex;

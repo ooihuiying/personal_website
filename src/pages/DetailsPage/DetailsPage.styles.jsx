@@ -2,27 +2,9 @@ import theme from '../../config/theme';
 import styled from 'styled-components';
 
 const style = {
-  filterbarStyle: {
-    marginBottom: '20px'
-  },
-
-  detailCardBorderStyle: {
-    borderColor: theme.colours.maroon
-  },
-
-  paginationStyle: {
-    marginTop: '20px'
-  },
-
   text: {
     textAlign: 'center',
-  },
-
-  image: {
-    paddingLeft: '100px',
-    paddingRight: '100px',
-    paddingBottom: '50px',
-  },
+  }
 };
 
 export const Header = styled.h1`
@@ -45,10 +27,12 @@ export const Background = styled.div`
 `
 
 export const PostsCard = styled.div`
-  width: calc(100% - 200px);
   margin: 100px;
   text-align: left;
   padding: 80px;
+  margin-right: auto;
+  margin-left: auto;
+ }
 `
 
 export const ButtonWrapper = styled.div`

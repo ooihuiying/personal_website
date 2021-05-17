@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PortalLayout from '../../layouts/PortalLayout';
 import { Container, Background, ImageContainer } from './FullArticlePage.styles';
 import { useLocation } from 'react-router-dom'
+import ReactHtmlParser from 'react-html-parser';
 import { Divider } from 'semantic-ui-react';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import FirebaseWrapper from '../../api/connect-firebase';
@@ -55,7 +56,7 @@ const FullArticlePage = () => {
               </ImageContainer>
             ) : (<div></div>)}
             <Divider horizontal>{data.date || ""}</Divider>
-            <div dangerouslySetInnerHTML={{ __html: data.text || "" }}></div>
+            <div>{ReactHtmlParser(data.text || "")}</div>
           </Container>
           : <LoadSpinner />}
       </Background>

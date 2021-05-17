@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
+import ReactHtmlParser from 'react-html-parser';
 
 export const QuoteCard = ({
   post, color
@@ -10,7 +11,7 @@ export const QuoteCard = ({
         <Card.Header>{post.title}</Card.Header>
         <Card.Meta>{post.date}</Card.Meta>
         <Card.Description>
-          <div dangerouslySetInnerHTML={{ __html: post.text || "" }}></div>
+          <div>{ReactHtmlParser(post.text || "")}</div>
         </Card.Description>
       </Card.Content>
     </Card>
