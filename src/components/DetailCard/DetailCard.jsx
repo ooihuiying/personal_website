@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
 import { SegmentStyle, ClickMore } from './DetailCard.styles';
 import ReactHtmlParser from 'react-html-parser';
+import { ExploreButton } from '../ExploreButton/ExploreButton'
 
 export const DetailCard = ({
   result, pathname
@@ -43,7 +44,9 @@ export const DetailCard = ({
             <div className="header">{result.title}</div>
             <div className="meta">{result.date}</div>
             <div>{result.text.length > 1000 ? ReactHtmlParser(result.text.slice(0, 1000)) : ReactHtmlParser(result.text) || ""}</div>
-            <ClickMore className="meta" onClick={handleClick} >{"................. View More .................."}</ClickMore>
+            {/* <ClickMore className="meta" onClick={handleClick} >{"................. View More .................."}</ClickMore> */}
+            <br></br>
+            <ExploreButton handleExploreButtonClick={handleClick} text={"Read More"} pointRight={true} />
           </div>
         </div>
       </div>

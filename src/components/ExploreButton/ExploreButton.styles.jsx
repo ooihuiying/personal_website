@@ -9,6 +9,7 @@ export const Explore = styled.span`
   color: ${theme.colours.maroon};
   :hover {
     background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
   }
 `;
 export const ButtonText = styled.span`

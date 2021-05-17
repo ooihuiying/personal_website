@@ -6,6 +6,7 @@ import ReactHtmlParser from 'react-html-parser';
 import { Divider } from 'semantic-ui-react';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import FirebaseWrapper from '../../api/connect-firebase';
+import { DisqusComments } from '../../components/DiscuqComments/DiscuqComments';
 
 const FullArticlePage = () => {
   const location = useLocation();
@@ -57,6 +58,7 @@ const FullArticlePage = () => {
             ) : (<div></div>)}
             <Divider horizontal>{data.date || ""}</Divider>
             <div>{ReactHtmlParser(data.text || "")}</div>
+            <DisqusComments post={data} url={"http://localhost:3001/personal_website#" + location.pathname} />
           </Container>
           : <LoadSpinner />}
       </Background>
