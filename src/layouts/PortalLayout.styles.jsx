@@ -30,6 +30,8 @@ export const PortalLayoutStyled = styled('div')`
       .navbar--item {
         display: inline-flex;
         justify-content: space-between;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
 
       .navbar--title {

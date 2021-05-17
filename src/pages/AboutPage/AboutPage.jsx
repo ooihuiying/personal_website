@@ -20,7 +20,19 @@ const AboutPage = () => {
                 <Button color='linkedin' onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'https://www.linkedin.com/in/hui-ying-ooi';
-                }}><Icon name='linkedin' />Connect on Linkedin</Button>
+                }}><Icon name='linkedin' />My Linkedin</Button>
+                <br></br>
+                <br></br>
+                <Button color='black' onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = 'https://github.com/ooihuiying';
+                }}><Icon name='github' />My GitHub</Button>
+                <br></br>
+                <br></br>
+                <Button color='purple' onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = 'https://medium.com/@liverungrow';
+                }}><Icon name='medium' />My Medium</Button>
               </Grid.Column>
               <Grid.Column width={12}>
                 <h1>About Me</h1>
@@ -30,8 +42,7 @@ const AboutPage = () => {
                 <p>I have recently graduated from the National University of Singapore with a degree in Computer Science.</p>
                 <p>While I don’t have the best language skills, I do enjoy reading, writing and documenting things I have learned.
                 The intention of this website is to serve as a repository of articles, which i hope to write, in the areas of topics that
-                i am interested in. Prior to creating this website, most of my written works were published on my medium account: @LiveRunGrow.
-                   I will continue to update both platforms so that it is easily accessible. </p>
+                i am interested in. </p>
                 <p>I really hope you will enjoy reading my articles in this website.</p>
                 <p>Have a nice day!</p>
               </Grid.Column>

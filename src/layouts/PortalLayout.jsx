@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
-import { FaHome } from 'react-icons/fa';
+import React from 'react';
 
 import { PortalLayoutStyled, NavTitle, NavItem } from './PortalLayout.styles';
 

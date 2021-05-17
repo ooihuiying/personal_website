@@ -26,4 +26,5 @@ export const AboutCard = styled.div`
   color: ${theme.colours.black};
   text-align: left;
   padding: 80px;
+  min-width: 750px;
 `
