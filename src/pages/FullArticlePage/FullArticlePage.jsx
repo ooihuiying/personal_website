@@ -61,7 +61,10 @@ const FullArticlePage = () => {
             <br />
             <br />
             <br />
-            <DisqusComments post={data} url={"http://localhost:3001/personal_website#" + location.pathname} />
+            {data.tag !== "quotes-posts" ?
+              <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
+              : <div></div>
+            }
           </Container>
           : <LoadSpinner />}
       </Background>
