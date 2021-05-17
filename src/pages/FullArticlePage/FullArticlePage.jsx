@@ -58,6 +58,9 @@ const FullArticlePage = () => {
             ) : (<div></div>)}
             <Divider horizontal>{data.date || ""}</Divider>
             <div>{ReactHtmlParser(data.text || "")}</div>
+            <br />
+            <br />
+            <br />
             <DisqusComments post={data} url={"http://localhost:3001/personal_website#" + location.pathname} />
           </Container>
           : <LoadSpinner />}
