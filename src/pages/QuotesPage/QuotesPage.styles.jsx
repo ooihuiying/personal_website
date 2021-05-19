@@ -24,8 +24,8 @@ export const Header = styled.h1`
 `
 
 export const PostsCard = styled.div`
-  width: calc(100% - 200px);
-  margin: 100px;
+  margin: auto;
+  margin-top: 100px;
   text-align: left;
   padding: 80px;
 `
