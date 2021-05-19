@@ -14,7 +14,6 @@ const db = FirebaseWrapper.ref(pathName)
 const Quotes = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const colorArray = ["red", "orange", "yellow", "olive", "green", "teal", "blue", "violet", "purple", "pink", "brown", "grey", "black"]
 
   useEffect(() => {
     async function fetchQuotesPosts() {
@@ -57,7 +56,7 @@ const Quotes = () => {
                 <div className="row" style={style.card}>
                   <Card.Group centered >
                     {data.map((result, index) => (
-                      <QuoteCard post={result} color={colorArray[index % (colorArray.length)]} />
+                      <QuoteCard post={result} />
                     ))}
                   </Card.Group>
                 </div>

@@ -35,12 +35,23 @@ class FirebaseWrapper {
         return new FirebaseWrapper(path);
     }
 
+    formatPost(post) {
+        var newTitle = "";
+        post.title.split("\n").map(function (item) {
+            newTitle += "<span>" + item + "<br /></span>";
+        })
+        post['title'] = newTitle;
+        return post;
+    }
+
     getSinglePost() {
         return this._ref
             .orderByChild("date") // date in ascending order
             .once("value")
             .then(post => {
-                return post.val();
+                var newPost = post.val();
+                newPost = this.formatPost(newPost);
+                return newPost;
             })
             .catch(console.error);
     }
@@ -55,6 +66,7 @@ class FirebaseWrapper {
                     //add new element to the front of the array
                     var newPost = post.val();
                     newPost['id'] = post.key;
+                    newPost = this.formatPost(newPost);
                     total = [newPost].concat(total);
                 })
                 return total;
@@ -75,6 +87,7 @@ class FirebaseWrapper {
                     //add new element to the front of the array
                     var newPost = post.val();
                     newPost['id'] = post.key;
+                    newPost = this.formatPost(newPost);
                     temp = temp.concat(newPost.date);
                     total = [newPost].concat(total);
                 })
@@ -99,6 +112,7 @@ class FirebaseWrapper {
                     //add new element to the front of the array
                     var newPost = post.val();
                     newPost['id'] = post.key;
+                    newPost = this.formatPost(newPost);
                     temp = temp.concat(newPost.date);
                     total = [newPost].concat(total);
                 })
@@ -123,6 +137,7 @@ class FirebaseWrapper {
                     //add new element to the front of the array
                     var newPost = post.val();
                     newPost['id'] = post.key;
+                    newPost = this.formatPost(newPost);
                     temp = temp.concat(newPost.date);
                     total = [newPost].concat(total);
                 })

@@ -20,7 +20,6 @@ export const Background = styled.div`
 export const AboutCard = styled.div`
   background-color: rgba(255,255,255,0.5);
   font-size: 20px;
-  font-family: cursive;
   width: calc(100% - 200px);
   margin: 100px;
   color: ${theme.colours.black};

@@ -41,7 +41,7 @@ export const DetailCard = ({
             </div>
           ) : (<div />)}
           <div className="content">
-            <div className="header">{result.title}</div>
+            <div className="header">{ReactHtmlParser(result.title)}</div>
             <div className="meta">{result.date}</div>
             <div>{result.text.length > 1000 ? ReactHtmlParser(result.text.slice(0, 1000)) : ReactHtmlParser(result.text) || ""}</div>
             <br></br>

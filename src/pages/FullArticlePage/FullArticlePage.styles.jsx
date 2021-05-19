@@ -2,23 +2,20 @@ import styled from 'styled-components';
 import bluesea from '../../images/bluesea.jpg';
 
 export const Container = styled.div`
-  background-color: rgba(255,255,255,0.5);
   font-size: 20px;
-  font-family: cursive;
-  width: calc(100% - 200px);
-  margin: 100px;
+  background-color: rgba(255,255,255,0.5);
+  margin-top: 80px;
   text-align: left;
   padding: 80px;
+  padding-bottom: 100px;
 `
 
 export const ImageContainer = styled.div`
-  display: block;
   margin: auto;
+  padding: 50px;
 `;
 
-
 export const Background = styled.div`
-  position: absolute;
   min-width: 100%;
   min-height: 100%;
   top: 0;

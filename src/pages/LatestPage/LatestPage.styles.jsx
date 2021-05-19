@@ -3,7 +3,7 @@ const style = {
     height: '100vh',
     backgroundColor: 'white',
     display: 'flex',
-    paddingTop: '20px',
+    paddingTop: '200px',
   }
 };
 

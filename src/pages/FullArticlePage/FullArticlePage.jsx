@@ -15,7 +15,7 @@ const FullArticlePage = () => {
 
   useEffect(() => {
     async function fetchPost() {
-      if (location.state != undefined) {
+      if (location.state !== undefined) {
         // (1) Derive data from the query input
         const data = location.state.post;
         setData(data);
@@ -44,28 +44,29 @@ const FullArticlePage = () => {
     <PortalLayout>
       <Background >
         {!loading ?
-          <Container>
-            {data.tag != undefined ? <a className="ui red tag label">{data.tag}</a> : <div />}
-            <h1 as='h2'>{data.title || ""}</h1>
-            {data.topImage ? (
-              <ImageContainer>
-                <img
-                  src={data.topImage}
-                  alt="Image"
-                  className="ui centered massive image"
-                />
-              </ImageContainer>
-            ) : (<div></div>)}
-            <Divider horizontal>{data.date || ""}</Divider>
-            <div>{ReactHtmlParser(data.text || "")}</div>
-            <br />
-            <br />
-            <br />
-            {data.tag !== "quotes-posts" ?
-              <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
-              : <div></div>
-            }
-          </Container>
+          <div>
+            <Container>
+              {data.tag != undefined ? <a className="ui red tag label">{data.tag}</a> : <div />}
+              <h1 style={{ 'textAlign': 'center' }} as='h2'>{ReactHtmlParser(data.title) || ""}</h1>
+              {data.topImage ? (
+                <ImageContainer>
+                  <img
+                    src={data.topImage}
+                    alt="Image"
+                    className="ui centered massive image"
+                  />
+                </ImageContainer>
+              ) : (<div></div>)}
+              <Divider horizontal>{data.date || ""}</Divider>
+              {ReactHtmlParser(data.text || "")}
+              <div style={{ 'padding': "100px" }}>
+                {data.tag !== "quotes-posts" ?
+                  <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
+                  : <div></div>
+                }
+              </div>
+            </Container>
+          </div>
           : <LoadSpinner />}
       </Background>
     </PortalLayout >

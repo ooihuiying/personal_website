@@ -13,33 +13,31 @@ const PortalLayout = ({ children }) => {
           <div className="navbar--item">
             <NavItem to="/latest">
               Latest
-            </NavItem>
+           </NavItem>
             <NavItem to="/tech-world">
               Tech World
-            </NavItem>
+             </NavItem>
             <NavItem to="/book-reviews">
               Book Reviews
-            </NavItem>
+             </NavItem>
             <NavItem to="/chinese-culture">
               Chinese Culture
-            </NavItem>
+             </NavItem>
             <NavItem to="/globe_trotting">
               Globe Trotting
             </NavItem>
             <NavItem to="/quotes">
               Quotes
-            </NavItem>
+             </NavItem>
             <NavItem to="/reflections">
               Reflections
-            </NavItem>
+             </NavItem>
           </div>
         </div>
-        <div className="layout--children">{children}</div>
-        <div className="layout--footer">
-
-        </div>
       </div>
+      {children}
     </PortalLayoutStyled>
+
   );
 };
 export default PortalLayout;

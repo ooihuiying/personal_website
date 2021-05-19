@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import theme from '../config/theme';
 
+
+
 export const PortalLayoutStyled = styled('div')`
   height: 100%;
   width: 100%;
-  
 
   .layout--main {
     display: flex;
@@ -41,13 +42,6 @@ export const PortalLayoutStyled = styled('div')`
         align-items: center;
         height: 30px;
       }
-    }
-
-    .layout--children {
-      flex: 1 1 auto;
-      margin-top: 150px;
-      background-color: ${theme.colours.white};
-      text-align: center;
     }
   }
 `;

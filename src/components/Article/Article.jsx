@@ -30,7 +30,7 @@ export const Article = ({ post } = {}) => {
 
   return (
     <SimpleContainer>
-      <Header as='h2'>{post.title || ""}</Header>
+      <Header as='h2'>{ReactHtmlParser(post.title) || ""}</Header>
       <a className="ui red tag label">{post.tag}</a>
       <br />
       <br />
