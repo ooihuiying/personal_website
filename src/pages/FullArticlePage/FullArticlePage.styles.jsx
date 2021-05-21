@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import bluesea from '../../images/bluesea.jpg';
 
 export const Container = styled.div`
-  font-size: 20px;
   background-color: rgba(255,255,255,0.5);
   margin-top: 80px;
   text-align: left;
