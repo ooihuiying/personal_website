@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44f8ffac9bdcbccfabf7e7f95645ea9a",
+    "revision": "ce145ef2d96d9da3db5273f541fcfa71",
     "url": "/personal_website/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal_website/static/js/2.16dfc7c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "906b47d4286ca000ce77",
-    "url": "/personal_website/static/js/main.970c83d8.chunk.js"
+    "revision": "4d05e2c00cbb5d731666",
+    "url": "/personal_website/static/js/main.12905e9d.chunk.js"
   },
   {
     "revision": "a445be300d828fc7c83c",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal_website/static/media/bluesea.ba86a8f8.jpg"
   },
   {
+    "revision": "18cab7a84ef72095b3fa40108b33cad9",
+    "url": "/personal_website/static/media/cheongsam.18cab7a8.jpg"
+  },
+  {
     "revision": "780030e3cf7e3ab33488cf218e376351",
     "url": "/personal_website/static/media/flowers.780030e3.jpg"
   },
   {
     "revision": "58d9926a43598eaaac75c524d4b2c540",
     "url": "/personal_website/static/media/hill.58d9926a.jpg"
-  },
-  {
-    "revision": "b6c30208ef65e86d655aa9aa71a8e8c9",
-    "url": "/personal_website/static/media/imagegirl.b6c30208.jpg"
   },
   {
     "revision": "59fe56c906079a85712c6e797beb5bf7",
