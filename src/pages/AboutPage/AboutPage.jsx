@@ -2,7 +2,7 @@ import React from "react";
 import { Background, AboutCard } from "./AboutPage.styles";
 import { Button, Icon, Image, Grid } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
-import imagegirl from '../../images/imagegirl.jpg';
+import imagegirl from '../../images/cheongsam.jpg';
 import { FaGlobeAsia } from 'react-icons/fa';
 const AboutPage = () => {
 
