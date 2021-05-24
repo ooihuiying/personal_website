@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce145ef2d96d9da3db5273f541fcfa71",
+    "revision": "5eaf9e0bb474d07996710d51f7449969",
     "url": "/personal_website/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal_website/static/js/2.16dfc7c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d05e2c00cbb5d731666",
-    "url": "/personal_website/static/js/main.12905e9d.chunk.js"
+    "revision": "d9ed0571a2cc063a7131",
+    "url": "/personal_website/static/js/main.08b4e19d.chunk.js"
   },
   {
     "revision": "a445be300d828fc7c83c",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal_website/static/media/bluesea.ba86a8f8.jpg"
   },
   {
-    "revision": "18cab7a84ef72095b3fa40108b33cad9",
-    "url": "/personal_website/static/media/cheongsam.18cab7a8.jpg"
+    "revision": "31a7af9c54736a4fe7262c0e577050b9",
+    "url": "/personal_website/static/media/cheongsam.31a7af9c.jpg"
   },
   {
     "revision": "780030e3cf7e3ab33488cf218e376351",
