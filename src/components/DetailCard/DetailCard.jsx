@@ -19,7 +19,6 @@ export const DetailCard = ({
       tag: result.tag,
       id: result.id
     };
-
     history.push({
       pathname: '/full_article' + pathname + '/' + result.id,
       state: { post: query }
@@ -43,7 +42,7 @@ export const DetailCard = ({
           <div className="content">
             <div className="header">{ReactHtmlParser(result.title)}</div>
             <div className="meta">{result.date}</div>
-            <div>{result.text.length > 1000 ? ReactHtmlParser(result.text.slice(0, 1000)) : ReactHtmlParser(result.text) || ""}</div>
+            <div>{result.text.length > 1000 ? ReactHtmlParser(result.text.slice(0, 1000) + " ......") : ReactHtmlParser(result.text + " ......") || ""}</div>
             <br></br>
             <ExploreButton handleExploreButtonClick={handleClick} text={"Read More"} pointRight={true} />
           </div>

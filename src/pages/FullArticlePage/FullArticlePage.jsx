@@ -27,7 +27,7 @@ const FullArticlePage = () => {
         const pathname = query_str[1]
         const id = query_str[2]
         const db = FirebaseWrapper.ref(pathname + "/" + id)
-        var data = await db.getSinglePost().then((post) => {
+        var data = await db.getSinglePost(id).then((post) => {
           if (post) {
             // contains {title, text, date, topImage, tag, id}
             return post
@@ -46,7 +46,7 @@ const FullArticlePage = () => {
         {!loading ?
           <div>
             <Container>
-              {data.tag != undefined ? <a className="ui red tag label">{data.tag}</a> : <div />}
+              {data.tag !== undefined ? <a className="ui red tag label">{data.tag}</a> : <div />}
               <h1 style={{ 'textAlign': 'center' }} as='h2'>{ReactHtmlParser(data.title) || ""}</h1>
               {data.topImage ? (
                 <ImageContainer>
@@ -59,12 +59,12 @@ const FullArticlePage = () => {
               ) : (<div></div>)}
               <Divider horizontal>{data.date || ""}</Divider>
               {ReactHtmlParser(data.text || "")}
-              <div style={{ 'padding': "100px" }}>
+              {/* <div style={{ 'padding': "100px" }}>
                 {data.tag !== "quotes-posts" ?
                   <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
                   : <div></div>
                 }
-              </div>
+              </div> */}
             </Container>
           </div>
           : <LoadSpinner />}

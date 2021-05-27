@@ -4,10 +4,13 @@ import React from 'react';
 export const DisqusComments = ({ post, url } = {}) => {
   const disqusShortname = "https-ooihuiying-github-io-personal-website"
   const disqusConfig = {
-    url: url,
-    identifier: post.id, // Single post id
+    // url: url,
+    url: `${url}/${post.id}`,
+    identifier: `#${post.id}`, // Single post id
     title: post.title // Single post title
   }
+  console.log("DISCUQ");
+  console.log(disqusConfig);
   return (
     <div>
       <DiscussionEmbed

@@ -44,13 +44,14 @@ class FirebaseWrapper {
         return post;
     }
 
-    getSinglePost() {
+    getSinglePost(id) {
         return this._ref
             .orderByChild("date") // date in ascending order
             .once("value")
             .then(post => {
                 var newPost = post.val();
                 newPost = this.formatPost(newPost);
+                newPost["id"] = id;
                 return newPost;
             })
             .catch(console.error);
