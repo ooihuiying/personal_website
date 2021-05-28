@@ -42,7 +42,7 @@ export const Article = ({ post } = {}) => {
         />
       </ImageContainer>
       <Divider horizontal>{post.date || ""}</Divider>
-      <div>{post.text.length > 2000 ? ReactHtmlParser(post.text.slice(0, 2000) + " ......") : ReactHtmlParser(post.text + " ......") || ""}</div>
+      <div>{post.text.length > 1000 ? ReactHtmlParser(post.text.slice(0, 1000) + " ......") : ReactHtmlParser(post.text + " ......") || ""}</div>
       <br></br>
       <ExploreButton handleExploreButtonClick={handleClick} text={"Read More"} pointRight={true} />
     </SimpleContainer>
