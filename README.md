@@ -27,3 +27,6 @@ https://react.semantic-ui.com/
 - Firebase is used to store the articles data
 - Cloudinary is used to store the images
 - .env file contents is stored inside the github repository secrets tab.
+
+#### Notes
+- Unfortunately, due to inactivity, the Firebase db has been deleted by Google. The webpage is still deployed and can be visited but there won't be any contents.
