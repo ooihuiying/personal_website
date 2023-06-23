@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Accordion, Header, Divider, Icon } from 'semantic-ui-react';
+import { Accordion, Icon } from 'semantic-ui-react';
 
 export const Resume = () => {
     const [activeIndex, setActiveIndex] = useState(-1);
@@ -13,12 +13,6 @@ export const Resume = () => {
 
   return (
     <>
-    <Divider horizontal>
-        <Header as='h2'>
-        <Icon name='tag' />
-           My History
-        </Header>
-    </Divider>   
     <Accordion fluid styled>
         <Accordion.Title
           active={activeIndex === 0}
@@ -26,7 +20,7 @@ export const Resume = () => {
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          July 2021- Mar 2023: Software Engineer II at Indeed.com 
+          July 2021-Mar 2023: Software Engineer II at Indeed.com 
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 0}>
         <p>
@@ -46,7 +40,7 @@ export const Resume = () => {
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          May-July 2020: Software Engineer Intern at Temasek Holdings
+          May 2020-July 2020: Software Engineer Intern at Temasek Holdings
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
             <p>
@@ -61,7 +55,7 @@ export const Resume = () => {
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          June-Dec 2019:  Software Engineer Intern at IQAir-AirVisual
+          June 2019-Dec 2019:  Software Engineer Intern at IQAir-AirVisual
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>
         <p>
@@ -90,7 +84,7 @@ mobile AirVisual App</li>
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          Aug 2017- Mar 2021: Student at National University of Singapore
+          Aug 2017-Mar 2021: Student at National University of Singapore
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 4}>
         <p>
@@ -104,7 +98,7 @@ mobile AirVisual App</li>
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          Feb-June 2017: Dental Assistant at Burlinson Dental Surgery 
+          Feb 2017-June 2017: Dental Assistant at Burlinson Dental Surgery 
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 5}>
         <p>
@@ -182,7 +176,7 @@ mobile AirVisual App</li>
           onClick={handleClick}
         >
           <Icon name='dropdown' />
-          11 November 1998
+          11 Nov 1998
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 10}>
         <p>
