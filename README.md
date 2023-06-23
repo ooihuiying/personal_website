@@ -27,3 +27,6 @@ https://react.semantic-ui.com/
 - Firebase RealtimeDatabase is used to store the articles data
 - Cloudinary is used to store the images
 - .env file contents is stored inside the github repository secrets tab.
+
+#### Others
+- If you want to add a new article or post, go to the project TextEditor where I've created a separate interface.
