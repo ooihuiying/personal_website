@@ -20,18 +20,18 @@ const PortalLayout = ({ children }) => {
             <NavItem to="/book-reviews">
               Book Reviews
              </NavItem>
-            <NavItem to="/chinese-culture">
+            {/* <NavItem to="/chinese-culture">
               Chinese Culture
-             </NavItem>
-            <NavItem to="/globe_trotting">
+             </NavItem> */} 
+            {/* <NavItem to="/globe_trotting">
               Globe Trotting
-            </NavItem>
+            </NavItem> */}
             <NavItem to="/quotes">
               Quotes
              </NavItem>
-            <NavItem to="/reflections">
+            {/* <NavItem to="/reflections">
               Reflections
-             </NavItem>
+             </NavItem> */}
           </div>
         </div>
       </div>
