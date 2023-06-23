@@ -9,7 +9,7 @@ import {
 } from './Timeline.styles';
 import theme from '../../config/theme';
 
-// allPosts: {title, text, date, topImage}
+// allPosts: {title, data, date}
 export const Timeline = ({ allPosts, active, onClick } = {}) => {
   // Note that we will not display all latest posts at once.
   // At any point, there will only be 5 items showing in the timeline
@@ -32,6 +32,7 @@ export const Timeline = ({ allPosts, active, onClick } = {}) => {
           </ArrowUp>
         )
         : ''}
+       
       <TimelineVerticalLine>
         {displayPosts.map((item) => (
           <TimelineWrapper key={item.title} onClick={() => onClick(item)}>
@@ -45,6 +46,7 @@ export const Timeline = ({ allPosts, active, onClick } = {}) => {
           </TimelineWrapper>
         ))}
       </TimelineVerticalLine>
+      
       {end < allPosts.length
         ? (
           <ArrowDown onClick={() => {
@@ -57,5 +59,6 @@ export const Timeline = ({ allPosts, active, onClick } = {}) => {
         )
         : ''}
     </div>
+    
   );
 };

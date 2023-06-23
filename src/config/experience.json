@@ -1,0 +1,114 @@
+{
+    "experiences": [
+      {
+        "title": "Software Engineer II at Indeed.com",
+        "date": "July 2021 - March 2023",
+        "data": [
+          "Part of the Localisation Tools Team",
+          "Independently implemented a multiple-component solution by enabling in-context translation previews through a Storybook add on, Jenkins, AWS S3, Spring boot Java and React Typescript",
+          "Spearheaded design and implementation of a frontend UI and backend services for internal localisation project managers to edit, search and view history changes of translation strings across Indeed teams projects",
+          "One of the main developers to build an in-house tool, involving microservices and frontend web, to replace Weblate wrapper maintenance costs for enabling outsourcing and syncing back of string translations between product teams' codebases and XTM",
+          "Provided technical support and collaborated with engineers in other teams to drive adoption of Localisation Tools team's tools",
+          "Championed good software engineering practices in the team by encouraging the use of Merge Request templates and hosted software engineering design patterns study sessions",
+          "Nurtured junior engineers through mentorship in one-on-one meeting sessions",
+          "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events"
+        ]
+      },
+      {
+        "title": "Graduated from the National University of Singapore",
+        "date": "March 2021",
+        "data": [
+          "Graduated with a Bachelor of Computing in Computer Science degree",
+          "Took courses in operating system, computer network, database systems, data structure and algorithms, software engineering, introduction to machine learning & artificial intelligence, mathematics (linear algebra, calculus, probability and statistics)",
+          "2 years Ridge View residential college program where I took part in college activities such as attending forums and classes relating to environment and sustainability, as well as participating in field trips (charity events and industrial site visits) ",
+          "In my third year of university, I was selected to be part of the NUS Overseas College program. I studied at Peking University in Beijing as an exchange student and interned at IQAir-Airvisual for a period of 6 months. I participated in several Beijing hackathon events and attended entrepreneurship related talks and networking events."
+        ]
+      },
+      {
+        "title": "Software Engineer Intern at Temasek Holdings",
+        "date": "May 2020 - July 2020",
+        "data": [
+          "Built API and UI for adding Feedback feature to mobile application for company internal usage with React-Native",
+          "Classified companies into categories using machine learning models like Bert and Sci-learn for investment analysts' usage"
+        ]
+      },
+      {
+        "title": "Software Engineer Intern at IQAir-AirVisual",
+        "date": "June 2019 - December 2019",
+        "data": [
+          "Used JavaScript to perform Web Scraping on different websites for the collection of air quality data to be displayed on the mobile AirVisual App",
+          "Developed Kibana Plugin interfaces with React-Redux to help engineers to monitor and track and manage air quality metrics displayed on the app"
+        ]
+      },
+      {
+        "title": "Part-time Tutor at Coding Lab",
+        "date": "August 2018 - January 2019",
+        "data": [
+          "Taught students from ages 7-16 computational thinking, Python language and Scratch programming",
+          "Created Google Apps script to automate sign-ups, class allocation, and sending of lessons' email notifications"
+        ]
+      },
+      {
+        "title": "Started school at the National University of Singapore",
+        "date": "August 2017",
+        "data": [
+          "Bachelor of Computing in Computer Science degree"
+        ]
+      },
+      {
+        "title": "Dental Assistant at Burlinson Dental Surgery",
+        "date": "February 2017 - June 2017",
+        "data": [
+          "Assisted dentist in procedures such as scaling and polishing, dental filling and tooth extraction surgeries",
+          "Handled clinic operational duties such as replenishing dental stocks, cleaning clinic and sterilising dental tools",
+          "Performed customer support duties such as patients' appointment booking, payment management and answering enquiries"
+        ]
+      },
+      {
+        "title": "Banquet Server",
+        "date": "June 2016 - August 2016",
+        "data": [
+          "Provided banquet server services during events and functions at various hotels and venues",
+          "Served food and beverages to guests, assisted in setting up and tearing down event setups",
+          "Ensured high-quality customer service and satisfaction"
+        ]
+      },
+      {
+        "title": "Student at Victoria Junior College",
+        "date": "2015-2016",
+        "data": [
+          "Studied Science Stream and graduated with the Singapore Cambridge A' Levels certificate",
+          "Studied H2 Physics, Chemistry, Mathematics, Economics and H1 General Paper. (H2 being of higher difficulty)",
+          "Member of Art club and Writers' circle"
+        ]
+      },
+      {
+        "title": "Student at Nan Chiau High School",
+        "date": "2011-2014",
+        "data": [
+          "Graduated with the Singapore Cambridge O' Levels certificate</li><li>Studied Advanced Mathematics, Mathematics, Physics, Chemistry, Pure Geography, Combined Humanities (Social Studies and History), Higher Chinese, English",
+          "Represented school for Basketball tournaments. My team achieved 2nd place in North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals",
+          "Awarded the Bicultural (English and Mandarin) scholarship given to 12 students of my cohort by the Singapore Hokkien Huay Kuan association. With this scholarship, I participated in 2-week long student exchange trips to Suzhou Foreign Language School (Shanghai and Suzhou, 2012) and Sacred Heart Girls High school (Taiwan, 2013)",
+          "Top student in cohort for combined humanities subject (Social studies and History)",
+          "Selected as 1 out of 4 students to represent school in NUS Geography Challenge and obtained individual Silver medal"
+        ]
+      },
+      {
+        "title": "Student at Chong Zheng Primary School",
+        "date": "2005-2010",
+        "data": [
+          "Graduated with a PSLE certificate",
+          "Studied Mathematics, Science, English and Chinese",
+          "Represented school for Netball tournaments"
+        ]
+      },
+      {
+        "title": "My birth",
+        "date": "11 Nov 1998",
+        "data": [
+          "I came into this world!"
+        ]
+      }
+    ]
+  }
+  

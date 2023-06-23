@@ -11,8 +11,8 @@ const PortalLayout = ({ children }) => {
             <NavTitle to="/">Hui Ying</NavTitle>
           </div>
           <div className="navbar--item">
-            <NavItem to="/latest">
-              Latest
+            <NavItem to="/experience">
+              My Experience
            </NavItem>
             <NavItem to="/tech-world">
               Tech World

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, HashRouter } from 'react-router-dom';
-import LatestPage from './pages/LatestPage/LatestPage';
+import ExperiencePage from './pages/ExperiencePage/ExperiencePage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import QuotesPage from './pages/QuotesPage/QuotesPage';
 import Error404 from './pages/ErrorPage/Error404';
@@ -28,7 +28,7 @@ ReactDOM.render(
     <ErrorHandler>
       <Switch>
         <Route exact path="/" ><AboutPage /></Route>
-        <Route exact path="/latest"><LatestPage pathname='TOP10' /></Route>
+        <Route exact path="/experience"><ExperiencePage/></Route>
         <Route exact path="/tech-world"><DetailsPage pathname='/cs-posts' image={compsci_img} title='Tech World' db={cs_db} /></Route>
         <Route exact path="/book-reviews"><DetailsPage pathname='/book-reviews-posts' image={book_reviews_img} title='Book Reviews' db={bk_db} /></Route>
         <Route exact path="/chinese-culture"><DetailsPage pathname='/chinese-culture-posts' image={chinese_img} title='Chinese Culture' db={chi_db} /></Route>

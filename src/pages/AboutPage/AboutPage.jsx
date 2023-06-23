@@ -4,7 +4,6 @@ import { Button, Icon, Image, Grid, Divider, Header } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
 import imagegirl from '../../images/huiying.JPG';
 import { FaGlobeAsia } from 'react-icons/fa';
-import {Resume} from '../../components/ResumeSection/Resume';
 
 const AboutPage = () => {
 
@@ -58,9 +57,6 @@ const AboutPage = () => {
                 <p>Have a nice day!</p>
               </Grid.Column>
             </Grid>
-            <br></br>
-            <br></br>
-            <Resume/>
           </AboutCard>
         </Background>
       </div>

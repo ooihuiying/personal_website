@@ -3,7 +3,7 @@ import theme from '../../config/theme';
 
 export const TimelineText = styled.span`
   place-content: center;
-  width: calc(50vw + 50%);
+  white-space: nowrap;
   margin-left: 40px;
 `;
 
@@ -65,3 +65,4 @@ export const ArrowDown = styled.div`
     transition: transform 0.4s;
   }
 `;
+
