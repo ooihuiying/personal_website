@@ -155,7 +155,7 @@ mobile AirVisual App</li>
         <p>
             <li>Graduated with the Singapore Cambridge O' Levels certificate</li>
             <li>Studied Advanced Mathematics, Mathematics, Physics, Chemistry, Pure Geography, Combined Humanities (Social Studies and History), Higher Chinese (more advanced version of Chinese language), English</li>
-            <li>Represented school for Basketball tournaments</li>
+            <li>Represented school for Basketball tournaments. My team achieved 2nd place in North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals</li>
             <li>Awarded the Bicultural (English and Mandarin) scholarship given to 12 students of my cohort by the Singapore Hokkien Huay Kuan association. With this scholarship, I participated in 2-week long student exchange trips to Suzhou Foreign Language School (Shanghai and Suzhou, 2012) and Sacred Heart Girls High school (Taiwan, 2013)</li>
             <li>Top student in cohort for combined humanities subject (Social studies and History)</li>
             <li>Selected as 1 out of 4 students to represent school in NUS Geography Challenge and obtained individual Silver medal</li>

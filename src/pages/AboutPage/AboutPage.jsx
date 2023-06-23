@@ -46,11 +46,12 @@ const AboutPage = () => {
                 <h1>About Me</h1>
                 <br />
                 <p> Hello 你好, I am Hui Ying.</p>
-                <p>I graduated from the National University of Singapore with a Bachelor degree in Computer Science in 2021.</p>
-                <p>Since then, I have been working as a Software engineer.</p>
-                <p>While I don’t have the best language skills, I do enjoy reading, writing and documenting things I have learned.
+                <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database.</p>
+                <p>
                 The intention of this website is to serve as a repository of articles, which i hope to write, in the areas of topics that
-                i am interested in. </p>
+                i am interested in. 
+                While I don’t have the best language skills, I do enjoy reading, writing and documenting things I have learned.
+                </p>
                 <p>I really hope you will enjoy reading my articles in this website.</p>
                 <p>Have a nice day!</p>
               </Grid.Column>
