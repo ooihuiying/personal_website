@@ -36,6 +36,7 @@
         "title": "Software Engineer Intern at IQAir-AirVisual",
         "date": "June 2019 - December 2019",
         "data": [
+          "Moved to Beijing China",
           "Used JavaScript to perform Web Scraping on different websites for the collection of air quality data to be displayed on the mobile AirVisual App",
           "Developed Kibana Plugin interfaces with React-Redux to help engineers to monitor and track and manage air quality metrics displayed on the app"
         ]
