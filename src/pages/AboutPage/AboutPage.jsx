@@ -1,9 +1,11 @@
 import React from "react";
 import { Background, AboutCard } from "./AboutPage.styles";
-import { Button, Icon, Image, Grid } from "semantic-ui-react"
+import { Button, Icon, Image, Grid, Divider, Header } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
 import imagegirl from '../../images/huiying.JPG';
 import { FaGlobeAsia } from 'react-icons/fa';
+import {Resume} from '../../components/ResumeSection/Resume';
+
 const AboutPage = () => {
 
   return (
@@ -14,19 +16,25 @@ const AboutPage = () => {
           <br />
           <AboutCard>
             <Grid >
-              <Grid.Column width={3}>
+              <Grid.Column width={4}>
                 <Image src={imagegirl} size='small'/>
                 <h2><FaGlobeAsia color="maroon" />{" Singapore"}</h2>
                 <Button color='linkedin' onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'https://www.linkedin.com/in/hui-ying-ooi';
-                }}><Icon name='linkedin' />Linkedin</Button>
+                }}><Icon name='linkedin' />My Linkedin</Button>
+                <br></br>
+                <br></br>
+                <Button color='red' onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = 'https://drive.google.com/file/d/1oT0asRybl7qmKRakRGC3-EbN5kUnhLjA/view?usp=sharing';
+                }}><Icon name='book' />Resume Pdf</Button>
                 <br></br>
                 <br></br>
                 <Button color='black' onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'https://github.com/ooihuiying';
-                }}><Icon name='github' />GitHub</Button>
+                }}><Icon name='github' />My GitHub</Button>
                 <br></br>
                 <br></br>
                 <Button color='purple' onClick={(e) => {
@@ -47,6 +55,9 @@ const AboutPage = () => {
                 <p>Have a nice day!</p>
               </Grid.Column>
             </Grid>
+            <br></br>
+            <br></br>
+            <Resume/>
           </AboutCard>
         </Background>
       </div>
