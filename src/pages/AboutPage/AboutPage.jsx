@@ -21,7 +21,7 @@ const AboutPage = () => {
                 <Button color='linkedin' onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'https://www.linkedin.com/in/hui-ying-ooi';
-                }}><Icon name='linkedin' />My Linkedin</Button>
+                }}><Icon name='linkedin' />My LinkedIn</Button>
                 <br></br>
                 <br></br>
                 <Button color='red' onClick={(e) => {
@@ -44,16 +44,12 @@ const AboutPage = () => {
               <Grid.Column width={12}>
                 <h1>About Me</h1>
                 <br />
-                <p> Hello 你好, I am Hui Ying.  I'm a software engineer, earnest reader and writer with an overactive imagination. I am also an avid runner and I enjoy travelling and being in nature!
-
-</p>
+                <p> Hello 你好, I am Hui Ying.</p>
                 <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database.</p>
                 <p>
-                The intention of this website is to serve as a repository of articles, which i hope to write, in the areas of topics that
-                i am interested in. 
-                While I don’t have the best language skills, I do enjoy reading, writing and documenting things I have learned.
+                 I'm a software engineer. In my free time, I like to read and share what I learned. I am also an avid runner and I enjoy travelling and being in nature!
                 </p>
-                <p>I really hope you will enjoy reading my articles in this website.</p>
+                <p>I really hope you will enjoy browsing my personal website.</p>
                 <p>Have a nice day!</p>
               </Grid.Column>
             </Grid>
