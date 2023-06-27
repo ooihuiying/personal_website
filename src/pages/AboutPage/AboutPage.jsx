@@ -44,10 +44,10 @@ const AboutPage = () => {
               <Grid.Column width={12}>
                 <h1>About Me</h1>
                 <br />
-                <p> Hello 你好, I am Hui Ying.</p>
+                <p> Hello 你好, I am Hui Ying 慧颖.</p>
                 <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database.</p>
                 <p>
-                 I'm a software engineer. In my free time, I like to read and share what I learned. I am also an avid runner and I enjoy travelling and being in nature!
+                 I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music (Chinese orchestra, piano, pop) and travel!
                 </p>
                 <p>I really hope you will enjoy browsing my personal website.</p>
                 <p>Have a nice day!</p>
