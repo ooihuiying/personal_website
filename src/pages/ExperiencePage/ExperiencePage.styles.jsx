@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import skater from '../../images/skater_solo.jpg';
 
 export const style = {
   main: {
@@ -11,6 +12,12 @@ export const style = {
 export const ExperiencePageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
+  background-color: white;
+  background-image: url('${skater}');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 200px;
+  margin-right: 50px;
 `;
 
 export const TimelineContainer = styled.div`
