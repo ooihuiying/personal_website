@@ -65,12 +65,12 @@ const FullArticlePage = () => {
               ) : (<div></div>)}
               <Divider horizontal>{data.date || ""}</Divider>
               {ReactHtmlParser(data.text || "")}
-              <div style={{ 'padding': "100px" }}>
+              {/* <div style={{ 'padding': "100px" }}>
                 {data.tag !== "quotes-posts" ?
                   <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
                   : <div></div>
                 }
-              </div>
+              </div> */}
             </Container>
           </div>
           : <LoadSpinner />}
