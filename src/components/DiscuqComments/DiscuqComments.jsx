@@ -2,7 +2,7 @@ import { DiscussionEmbed } from "disqus-react"
 import React from 'react';
 
 export const DisqusComments = ({ post, url } = {}) => {
-  const disqusShortname = "https-ooihuiying-github-io-personal-website"
+  const disqusShortname = "https-ooihuiying-github-io-personal-website-1"
   const disqusConfig = {
     // url: url,
     url: `${url}/${post.id}`,

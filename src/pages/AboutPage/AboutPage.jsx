@@ -4,6 +4,7 @@ import { Button, Icon, Image, Grid, Divider, Header } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
 import imagegirl from '../../images/huiying.JPG';
 import { FaGlobeAsia } from 'react-icons/fa';
+import { DisqusComments } from '../../components/DiscuqComments/DiscuqComments';
 
 const AboutPage = () => {
 
@@ -45,14 +46,20 @@ const AboutPage = () => {
                 <h1>About Me</h1>
                 <br />
                 <p> Hello 你好, I am Hui Ying 慧颖.</p>
-                <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database.</p>
+                <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database and Cloudinary for storage.</p>
                 <p>
-                 I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music (Chinese orchestra, piano, pop) and travel!
+                 I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music (Chinese orchestra, piano, pop), draw, take photographs and travel!
                 </p>
-                <p>I really hope you will enjoy browsing my personal website.</p>
+                <p>I really hope you will enjoy browsing my personal website. Feel free to leave a reaction or comment below!</p>
                 <p>Have a nice day!</p>
               </Grid.Column>
             </Grid>
+            <div style={{ 'padding': "100px" }}>
+              <DisqusComments post={{
+                "id": "123",
+                "title": "About"
+              }} url={"https://ooihuiying.github.io/personal_website/#"} />
+          </div>
           </AboutCard>
         </Background>
       </div>

@@ -7,7 +7,13 @@ import { Divider } from 'semantic-ui-react';
 import LoadSpinner from '../../components/LoadSpinner/LoadSpinner';
 import FirebaseWrapper from '../../api/connect-firebase';
 import { DisqusComments } from '../../components/DiscuqComments/DiscuqComments';
-
+/*
+ * Wanted to display Disqus comments section for each article page.
+ * However, somehow all the articles ended up displaying the same comments
+ * even though I passed in a different Disqus config .....
+ * Hence, I just removed it..and only display the Disqus comments section in the 
+ * about page.
+ */
 const FullArticlePage = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -59,12 +65,12 @@ const FullArticlePage = () => {
               ) : (<div></div>)}
               <Divider horizontal>{data.date || ""}</Divider>
               {ReactHtmlParser(data.text || "")}
-              {/* <div style={{ 'padding': "100px" }}>
+              <div style={{ 'padding': "100px" }}>
                 {data.tag !== "quotes-posts" ?
                   <DisqusComments post={data} url={"https://ooihuiying.github.io/personal_website/#" + location.pathname} />
                   : <div></div>
                 }
-              </div> */}
+              </div>
             </Container>
           </div>
           : <LoadSpinner />}
