@@ -14,6 +14,7 @@ import globe_img from '../src/images/trailer.jpg';
 import compsci_img from '../src/images/bluemountains.jpg';
 import reflect_img from '../src/images/reflect.jpg';
 import FirebaseWrapper from '../src/api/connect-firebase';
+import ReactGA from 'react-ga';
 
 require("dotenv").config({ path: __dirname + "/.env" });
 const cs_db = FirebaseWrapper.ref('/cs-posts')
@@ -21,6 +22,9 @@ const bk_db = FirebaseWrapper.ref('/book-reviews-posts')
 const chi_db = FirebaseWrapper.ref('/chinese-culture-posts')
 const gb_db = FirebaseWrapper.ref('/globe-trotting-posts')
 const rf_db = FirebaseWrapper.ref('/reflection-posts')
+
+const TRACKING_ID = process.env.FIREBASE_MEASUREMENT_ID;
+ReactGA.initialize(TRACKING_ID);
 
 // Important to only use Hashrouter. Cannot use Browserrouter for github page.
 ReactDOM.render(

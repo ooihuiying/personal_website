@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Background, AboutCard } from "./AboutPage.styles";
 import { Button, Icon, Image, Grid, Divider, Header } from "semantic-ui-react"
 import PortalLayout from '../../layouts/PortalLayout';
 import imagegirl from '../../images/huiying.JPG';
 import { FaGlobeAsia } from 'react-icons/fa';
 import { DisqusComments } from '../../components/DiscuqComments/DiscuqComments';
+import useAnalyticsEventTracker from '../../api/UseAnalyticsEventTracker';
 
 const AboutPage = () => {
+ 
+  const gaEventTracker =  useAnalyticsEventTracker("About Page");
 
+  useEffect(() => {
+    gaEventTracker("Load Page");
+  })
+  
   return (
     <PortalLayout>
       <div className="image">
