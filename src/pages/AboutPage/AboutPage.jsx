@@ -26,7 +26,7 @@ const AboutPage = () => {
             <Grid >
               <Grid.Column width={4}>
                 <Image src={imagegirl} size='small'/>
-                <h2><FaGlobeAsia color="maroon" />{" Singapore"}</h2>
+                {/* <h2><FaGlobeAsia color="maroon" />{" Singapore"}</h2> */}
                 <Button color='linkedin' onClick={(e) => {
                   e.preventDefault();
                   window.location.href = 'https://www.linkedin.com/in/hui-ying-ooi';
