@@ -14,7 +14,7 @@ const AboutPage = () => {
   useEffect(() => {
     console.log("Emit load page event");
     gaEventTracker("Load Page");
-  })
+  });
   
   return (
     <PortalLayout>
