@@ -57,7 +57,7 @@ const AboutPage = () => {
                 <p> Hello 你好, I am Hui Ying 慧颖.</p>
                 <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database and Cloudinary for storage.</p>
                 <p>
-                 I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music (Chinese orchestra, piano, pop), draw, take photographs and travel!
+                 I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music of varying genres and languages, create artworks, take photographs and travel!
                 </p>
                 <p>I really hope you will enjoy browsing my personal website. Feel free to leave a reaction or comment below!</p>
                 <p>Have a nice day!</p>
