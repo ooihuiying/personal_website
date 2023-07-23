@@ -18,7 +18,7 @@ const PortalLayout = ({ children }) => {
               Tech World
              </NavItem>
             <NavItem to="/book-reviews">
-              Book Reviews
+              Books
              </NavItem>
             {/* <NavItem to="/chinese-culture">
               Chinese Culture
