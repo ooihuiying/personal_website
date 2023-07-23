@@ -34,7 +34,7 @@ ReactDOM.render(
         <Route exact path="/" ><AboutPage /></Route>
         <Route exact path="/experience"><ExperiencePage/></Route>
         <Route exact path="/tech-world"><DetailsPage pathname='/cs-posts' image={compsci_img} title='Tech World' db={cs_db} /></Route>
-        <Route exact path="/book-reviews"><DetailsPage pathname='/book-reviews-posts' image={book_reviews_img} title='Book Reviews' db={bk_db} /></Route>
+        <Route exact path="/books"><DetailsPage pathname='/book-reviews-posts' image={book_reviews_img} title='Books' db={bk_db} /></Route>
         <Route exact path="/chinese-culture"><DetailsPage pathname='/chinese-culture-posts' image={chinese_img} title='Chinese Culture' db={chi_db} /></Route>
         <Route exact path="/globe_trotting"><DetailsPage pathname='/globe-trotting-posts' image={globe_img} title='Globe Trotting' db={gb_db} /></Route>
         <Route exact path="/quotes"><QuotesPage /></Route>
