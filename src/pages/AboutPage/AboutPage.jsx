@@ -36,7 +36,7 @@ const AboutPage = () => {
                 <br></br>
                 <Button color='red' onClick={(e) => {
                   e.preventDefault();
-                  window.location.href = 'https://drive.google.com/file/d/17qIXYRfj8AkPT_5aNsoIvHh-yhkd82iw/view?usp=sharing';
+                  window.location.href = 'https://drive.google.com/file/d/1O88yGgq-cGZTmcJnrpbXDeQhN5FMsEpx/view?usp=sharing';
                 }}><Icon name='book' />Resume Pdf</Button>
                 <br></br>
                 <br></br>
