@@ -4,7 +4,8 @@
         "title": "Software Engineer at Standard Chartered Bank",
         "date": "Present",
         "data": [
-          "Part of the SABRE Analytics Booking and Risk Engine Team"
+          "Part of the SABRE Analytics Booking and Risk Engine Team behind the system used to compute risks for all financial assets in the Bank's trading activities",
+          "Worked with Apache Spark, Kafka, Hazelcast, Ansible and Java Multithreading"
         ]
       },
       {
@@ -57,7 +58,7 @@
         ]
       },
       {
-        "title": "Started school at the National University of Singapore",
+        "title": "Student at the National University of Singapore",
         "date": "August 2017",
         "data": [
           "Bachelor of Computing in Computer Science degree"
@@ -85,8 +86,9 @@
         "date": "2015-2016",
         "data": [
           "Studied in the Science Stream and graduated with the Singapore Cambridge A' Levels certificate",
-          "Studied H2 Physics, Chemistry, Mathematics, Economics and H1 General Paper (H2 being of higher difficulty)",
-          "Member of Art club and Writers' circle"
+          "Studied H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics, H1 General Paper and H1 Project Work (H2 being of higher difficulty than H1)",
+          "Treasurer and Secretary of Art club where I refined my artistic skills in varying mediums (sketching, paper printing) from teachers, helped out in school events such as organising art exhibitions and decorating school's facilities for festive events",
+          "Member of Writers' circle where I published articles for the club's publishing newsletter"
         ]
       },
       {
@@ -95,17 +97,17 @@
         "data": [
           "Graduated with the Singapore Cambridge O' Levels certificate",
           "Studied Advanced Mathematics, Mathematics, Physics, Chemistry, Pure Geography, Combined Humanities (Social Studies and History), Higher Chinese, English",
-          "Represented school for Basketball tournaments. My team achieved 2nd place in North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals",
+          "Represented school for Basketball tournaments in National championships. My team achieved 2nd place in the North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals",
           "Awarded the Bicultural (English and Mandarin) scholarship given to 12 students of my cohort by the Singapore Hokkien Huay Kuan association. With this scholarship, I participated in 2-week long student exchange trips to Suzhou Foreign Language School (Shanghai and Suzhou, 2012) and Sacred Heart Girls High school (Taiwan, 2013)",
           "Top student in my cohort for combined humanities subject (Social studies and History)",
-          "Selected as 1 out of 4 students to represent school in NUS Geography Challenge and obtained individual Silver medal"
+          "Selected as 1 out of 4 students to represent my school to compete in the NUS Geography Challenge, opened for all secondary schools, and obtained an individual Silver medal"
         ]
       },
       {
         "title": "Student at Chong Zheng Primary School",
         "date": "2005-2010",
         "data": [
-          "Graduated with a PSLE certificate",
+          "Graduated with the Singapore PSLE certificate",
           "Studied Mathematics, Science, English and Chinese",
           "Represented school for Netball tournaments"
         ]
