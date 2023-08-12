@@ -12,7 +12,6 @@ const AboutPage = () => {
   const gaEventTracker =  useAnalyticsEventTracker("About Page");
 
   useEffect(() => {
-    console.log("Emit load page event");
     gaEventTracker("Load Page");
   });
   

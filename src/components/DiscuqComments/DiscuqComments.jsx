@@ -9,8 +9,6 @@ export const DisqusComments = ({ post, url } = {}) => {
     identifier: `#${post.id}`, // Single post id
     title: post.title // Single post title
   }
-  console.log("DISCUQ");
-  console.log(disqusConfig);
   return (
     <div>
       <DiscussionEmbed
