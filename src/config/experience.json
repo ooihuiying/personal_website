@@ -4,31 +4,31 @@
         "title": "Software Engineer at Standard Chartered Bank",
         "date": "Present",
         "data": [
-          "Part of the SABRE Analytics Booking and Risk Engine Team behind the system used to compute risks for all financial assets in the Bank's trading activities",
-          "Worked with Apache Spark, Kafka, Hazelcast, Ansible and Java Multithreading"
+          "Part of the SABRE Analytics Booking and Risk Engine Team which builds and manages the core system used to compute risks for all financial assets in the Bank's trading activities.",
+          "Worked with Apache Spark, Kafka, Hazelcast, Ansible and Java Multithreading."
         ]
       },
       {
         "title": "Software Engineer II at Indeed.com",
         "date": "July 2021 - March 2023",
         "data": [
-          "Part of the Localisation Tools Team",
-          "Independently implemented a multiple-component solution by enabling in-context translation previews through a Storybook add on, Jenkins, AWS S3, Spring boot Java and React Typescript",
-          "Spearheaded design and implementation of a frontend UI and backend services for internal localisation project managers to edit, search and view history changes of translation strings across Indeed teams projects",
-          "One of the main developers to build an in-house tool, involving microservices and frontend web, to replace Weblate wrapper maintenance costs for enabling outsourcing and syncing back of string translations between product teams' codebases and XTM",
-          "Provided technical support and collaborated with engineers in other teams to drive adoption of Localisation Tools team's tools",
-          "Championed good software engineering practices in the team by encouraging the use of Merge Request templates and hosted software engineering design patterns study sessions",
-          "Nurtured junior engineers through mentorship in one-on-one meeting sessions",
-          "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events"
+          "Part of the Localisation Tools Team to manage translations for Indeed products (Web app, Mobile app) to drive company's global expansion.",
+          "Independently implemented a multiple-component solution by enabling in-context translation previews through a Storybook add on, Jenkins, AWS S3, Spring boot Java and React Typescript.",
+          "Spearheaded design and implementation of a frontend UI and backend services for internal localisation project managers to edit, search and view history changes of translation strings across Indeed teams projects.",
+          "One of the main developers to build an in-house tool, involving microservices and frontend web, to replace Weblate wrapper maintenance costs for enabling outsourcing and syncing back of string translations between product teams' codebases and XTM.",
+          "Provided technical support and collaborated with engineers in other teams to drive adoption of Localisation Tools team's tools.",
+          "Championed good software engineering practices in the team by encouraging the use of Merge Request templates and hosted software engineering design patterns study sessions.",
+          "Nurtured junior engineers through mentorship in one-on-one meeting sessions.",
+          "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events."
         ]
       },
       {
         "title": "Graduated from the National University of Singapore",
         "date": "May 2021",
         "data": [
-          "Graduated with a Bachelor of Computing in Computer Science degree",
-          "Took courses in operating system, computer network, database systems, data structure and algorithms, software engineering, introduction to machine learning & artificial intelligence, mathematics (linear algebra, calculus, probability and statistics)",
-          "2 years Ridge View residential college program where I took part in college activities such as attending forums and classes relating to environment and sustainability, as well as participating in field trips (charity events and industrial site visits) ",
+          "Graduated with a Bachelor of Computing in Computer Science degree.",
+          "Took courses in operating system, computer network, database systems, data structure and algorithms, software engineering, introduction to machine learning & artificial intelligence, mathematics (linear algebra, calculus, probability and statistics).",
+          "In my first 2 years of university, I was selected to be part of the 2 Years Ridge View Residential College Program. I took part in college activities such as attending forums and classes relating to environment and sustainability, as well as participating in field trips (charity events and industrial site visits). I was part of the Yoga weekly interest group and represented RVRC in the inter-college Volleyball sports events.",
           "In my third year of university, I was selected to be part of the NUS Overseas College program. I studied at Peking University in Beijing as an exchange student and interned at IQAir-Airvisual for a period of 6 months. I participated in several Beijing hackathon events and attended entrepreneurship related talks and networking events."
         ]
       },
@@ -36,80 +36,80 @@
         "title": "Software Engineer Intern at Temasek Holdings",
         "date": "May 2020 - July 2020",
         "data": [
-          "Built API and UI for adding Feedback feature to mobile application for company internal usage with React-Native",
-          "Classified companies into categories using machine learning models like Bert and Sci-learn for investment analysts' usage"
+          "Built API and UI for adding Feedback feature to mobile application for company internal usage with React-Native.",
+          "Classified companies into categories using machine learning models like Bert and Sci-learn for investment analysts' usage."
         ]
       },
       {
         "title": "Software Engineer Intern at IQAir-AirVisual",
         "date": "June 2019 - December 2019",
         "data": [
-          "Moved to Beijing China",
-          "Used JavaScript to perform Web Scraping on different websites for the collection of air quality data to be displayed on the mobile AirVisual App",
-          "Developed Kibana Plugin interfaces with React-Redux to help engineers to monitor and track and manage air quality metrics displayed on the app"
+          "Moved to Beijing China.",
+          "Used JavaScript to perform Web Scraping on different websites for the collection of air quality data to be displayed on the mobile AirVisual App.",
+          "Developed Kibana Plugin interfaces with React-Redux to help engineers to monitor and track and manage air quality metrics displayed on the app."
         ]
       },
       {
         "title": "Part-time Tutor at Coding Lab",
         "date": "August 2018 - January 2019",
         "data": [
-          "Taught students from ages 7-16 computational thinking, Python language and Scratch programming",
-          "Created Google Apps script to automate sign-ups, class allocation, and sending of lessons' email notifications"
+          "Taught students from ages 7-16 computational thinking, Python language and Scratch programming.",
+          "Created Google Apps script to automate sign-ups, class allocation, and sending of lessons' email notifications."
         ]
       },
       {
         "title": "Student at the National University of Singapore",
         "date": "August 2017",
         "data": [
-          "Bachelor of Computing in Computer Science degree"
+          "Bachelor of Computing in Computer Science degree."
         ]
       },
       {
         "title": "Dental Assistant at Burlinson Dental Surgery",
         "date": "February 2017 - June 2017",
         "data": [
-          "Assisted dentist in procedures such as scaling and polishing, dental filling and tooth extraction surgeries",
-          "Handled clinic operational duties such as replenishing dental stocks, cleaning clinic and sterilising dental tools",
-          "Performed customer support duties such as patients' appointment booking, payment management and answering enquiries"
+          "Assisted the dentist in procedures such as scaling and polishing, dental filling and tooth extraction surgeries.",
+          "Handled clinic operational duties such as replenishing dental stocks, cleaning clinic and sterilising dental tools.",
+          "Performed customer support duties such as patients' appointment booking, payment management and answering enquiries."
         ]
       },
       {
         "title": "Banquet Server",
         "date": "December 2016 - January 2017",
         "data": [
-          "Ensured high-quality customer service and satisfaction while serving food and beverages to guests during banquets at various hotels",
-          "Assisted in setting up and tearing down event setups"
+          "Ensured high-quality customer service and satisfaction while serving food and beverages to guests during banquets at various hotels.",
+          "Assisted in setting up and tearing down event setups."
         ]
       },
       {
         "title": "Student at Victoria Junior College",
         "date": "2015-2016",
         "data": [
-          "Studied in the Science Stream and graduated with the Singapore Cambridge A' Levels certificate",
-          "Studied H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics, H1 General Paper and H1 Project Work (H2 being of higher difficulty than H1)",
-          "Treasurer and Secretary of Art club where I refined my artistic skills in varying mediums (sketching, paper printing) from teachers, helped out in school events such as organising art exhibitions and decorating school's facilities for festive events",
-          "Member of Writers' circle where I published articles for the club's publishing newsletter"
+          "Studied in the Science Stream and graduated with the Singapore Cambridge A' Levels certificate.",
+          "Studied H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics, H1 General Paper and H1 Project Work (H2 being of higher difficulty than H1).",
+          "Treasurer and Secretary of Art club. I refined my artistic skills in varying mediums (sketching, paper printing) by learning from teachers. I helped out in school events such as organising art exhibitions and decorating school's facilities for festive events.",
+          "Member of Writers' circle where I wrote articles for the club's publishing newsletters."
         ]
       },
       {
         "title": "Student at Nan Chiau High School",
         "date": "2011-2014",
         "data": [
-          "Graduated with the Singapore Cambridge O' Levels certificate",
-          "Studied Advanced Mathematics, Mathematics, Physics, Chemistry, Pure Geography, Combined Humanities (Social Studies and History), Higher Chinese, English",
-          "Represented school for Basketball tournaments in National championships. My team achieved 2nd place in the North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals",
-          "Awarded the Bicultural (English and Mandarin) scholarship given to 12 students of my cohort by the Singapore Hokkien Huay Kuan association. With this scholarship, I participated in 2-week long student exchange trips to Suzhou Foreign Language School (Shanghai and Suzhou, 2012) and Sacred Heart Girls High school (Taiwan, 2013)",
-          "Top student in my cohort for combined humanities subject (Social studies and History)",
-          "Selected as 1 out of 4 students to represent my school to compete in the NUS Geography Challenge, opened for all secondary schools, and obtained an individual Silver medal"
+          "Graduated with the Singapore Cambridge O' Levels certificate.",
+          "Studied Advanced Mathematics, Mathematics, Physics, Chemistry, Pure Geography, Combined Humanities (Social Studies and History), Higher Chinese, English.",
+          "Represented school for Basketball tournaments in National championships. My team achieved 2nd place in the North zone and 8th place overall in the C' division of the 2012 Singapore Basketball Nationals.",
+          "Awarded the Bicultural (English and Mandarin) scholarship given to 12 students of my cohort by the Singapore Hokkien Huay Kuan association. With this scholarship, I participated in 2-week long student exchange trips to Suzhou Foreign Language School (Shanghai and Suzhou, 2012) and Sacred Heart Girls High school (Taiwan, 2013).",
+          "Top student in my cohort for combined humanities subject (Social studies and History).",
+          "Selected as 1 out of 4 students to represent my school to compete in the NUS Geography Challenge, opened for all secondary schools, and obtained an individual Silver medal."
         ]
       },
       {
         "title": "Student at Chong Zheng Primary School",
         "date": "2005-2010",
         "data": [
-          "Graduated with the Singapore PSLE certificate",
-          "Studied Mathematics, Science, English and Chinese",
-          "Represented school for Netball tournaments"
+          "Graduated with the Singapore PSLE certificate.",
+          "Studied Mathematics, Science, English and Chinese.",
+          "Represented school for Netball tournaments."
         ]
       },
       {
