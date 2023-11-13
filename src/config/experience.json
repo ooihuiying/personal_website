@@ -4,8 +4,7 @@
         "title": "Software Engineer at Standard Chartered Bank",
         "date": "Present",
         "data": [
-          "Part of the SABRE Analytics Booking and Risk Engine Team which builds and manages the core system used to compute risks for all financial assets in the Bank's trading activities.",
-          "Worked with Apache Spark, Kafka, Hazelcast, Ansible and Java Multithreading."
+          "Part of the SABRE Team to build the Trade booking system used for the Bank's trading activities."
         ]
       },
       {
