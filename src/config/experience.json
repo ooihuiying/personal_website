@@ -1,7 +1,7 @@
 {
     "experiences": [
       {
-        "title": "Published Mobile app to Google Play Store",
+        "title": "Published Tangyuan Mobile app to Google Play Store",
         "date": "Present",
         "data": [
           "Google play store: https://play.google.com/store/apps/details?id=com.app.tangyuan",
@@ -12,7 +12,7 @@
       },
       {
         "title": "Software Engineer at Standard Chartered Bank",
-        "date": "Present",
+        "date": "July 2023 - Present",
         "data": [
           "Part of the SABRE Team to build the Trade booking system used for the Bank's trading activities.",
           "Worked with Java Springboot, ReactJS, Apache Kafka, Java Springboot, Docker, Kubernetes, Helm and Maven."
@@ -29,7 +29,8 @@
           "Provided technical support and collaborated with engineers in other teams to drive adoption of Localisation Tools team's tools.",
           "Championed good software engineering practices in the team by encouraging the use of Merge Request templates and hosted software engineering design patterns study sessions.",
           "Nurtured junior engineers through mentorship in one-on-one meeting sessions.",
-          "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events."
+          "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events.",
+          "Unfortunately impacted by the Singapore Tech office closure and layoff in March 2023."
         ]
       },
       {
