@@ -2,8 +2,9 @@
     "experiences": [
       {
         "title": "Published Tangyuan Mobile app to Google Play Store",
-        "date": "Present",
+        "date": "Dec 2023 - Present",
         "data": [
+          "Tangyuan is a one stop family social app to manage households related matters.",
           "Google play store: https://play.google.com/store/apps/details?id=com.app.tangyuan",
           "Newsletter: https://tangyuan.substack.com/p/app-is-released-on-the-google-play",
           "Product Hunt: https://www.producthunt.com/posts/tangyuan",
@@ -15,6 +16,9 @@
         "date": "July 2023 - Present",
         "data": [
           "Part of the SABRE Team to build the Trade booking system used for the Bank's trading activities.",
+          "Collaborated with Business Analyst to discuss requirements and implemented code to enable bulk booking of trades into system.",
+          "Migrated code repositories from Bitbucket to Azure and set up deployment pipelines with Docker, K8 and Helm.",
+          "Worked on Engineering code improvement tickets and bug fixes.",
           "Worked with Java Springboot, ReactJS, Apache Kafka, Java Springboot, Docker, Kubernetes, Helm and Maven."
         ]
       },
@@ -30,7 +34,7 @@
           "Championed good software engineering practices in the team by encouraging the use of Merge Request templates and hosted software engineering design patterns study sessions.",
           "Nurtured junior engineers through mentorship in one-on-one meeting sessions.",
           "Contributed to the organization by interviewing potential hire engineers/managers and represented Indeed at university recruitment events.",
-          "Unfortunately impacted by the Singapore Tech office closure and layoff in March 2023."
+          "Tenure ended due to Singapore Tech office closure and layoff in March 2023."
         ]
       },
       {
