@@ -1,6 +1,14 @@
 {
     "experiences": [
       {
+        "title": "Software Engineer at Google",
+        "date": "April 2024 - present",
+        "data": [
+          "Search Profile Team",
+          "Implement features for the One Presence platform, which enables content creators to view and manage all their search reviews in a single platform."
+        ]
+      },
+      {
         "title": "Published Tangyuan Mobile app to Google Play Store",
         "date": "Dec 2023 - Present",
         "data": [
@@ -13,7 +21,7 @@
       },
       {
         "title": "Software Engineer at Standard Chartered Bank",
-        "date": "July 2023 - Present",
+        "date": "July 2023 - May 2024",
         "data": [
           "Part of the SABRE Team to build the Trade booking system used for the Bank's trading activities.",
           "Collaborated with Business Analyst to discuss requirements and implemented code to enable bulk booking of trades into system.",
