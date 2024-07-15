@@ -53,7 +53,7 @@ const AboutPage = () => {
               <Grid.Column width={12}>
                 <h1>About Me</h1>
                 <br />
-                <p> Hello 你好, I am Hui Ying 慧颖.</p>
+                <p> Hello, I am Hui Ying.</p>
                 <p> Welcome to my website! I created this website using React and JavaScript. This app is integrated with Google Firebase database and Cloudinary for storage.</p>
                 <p>
                  I'm a software engineer. In my free time, I like to read, run, play sports, watch figure skating videos, listen to music of varying genres and languages, create artworks, take photographs and travel!
